@@ -66,6 +66,24 @@ footer {
     background: #E8EDF1;
     color:#584029;
     padding: 20px 0px;
+    }
+.main-section {
+margin: 100px auto 220px auto;
+width: 960px;
+font-size: 20px;
+font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",sans-serif;
+line-height: 45px;
+
+}
+.project {
+font-size: 25px;
+line-height: 30px;
+}
+.contact-us {
+font-size: 20px;
+line-height: 25px;
+display: inline-block;
+margin: 10px 0px;
 }
 
 .clear{
