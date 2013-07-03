@@ -61,6 +61,13 @@ header, article {
     top: 40%;
     left: 40%;
 }
+h2 {
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+h3, h4, h5 {
+    font-weight: normal;
+}
 
 footer {
     background: #E8EDF1;
@@ -68,16 +75,23 @@ footer {
     padding: 20px 0px;
     }
 .main-section {
-margin: 100px auto 220px auto;
+margin: 50px auto;
 width: 960px;
-font-size: 20px;
 font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",sans-serif;
-line-height: 45px;
 
 }
-.project {
-font-size: 25px;
-line-height: 30px;
+.projects {
+    clear: both;
+    margin-bottom: 30px;
+}
+.projects .each-project {
+    float: left;
+    width: 400px;
+    margin-right: 60px;
+}
+.projects .each-project:last-child {
+    float: left;
+    margin-right: 0px;
 }
 .contact-us {
 font-size: 20px;
@@ -88,4 +102,7 @@ margin: 10px 0px;
 
 .clear{
     overflow:hidden;
+}
+footer ul {
+    margin-left: 120px;
 }
