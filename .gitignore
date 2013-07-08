@@ -17,3 +17,4 @@
 *.iml
 .idea/
 Gemfile.lock
+.rspec
