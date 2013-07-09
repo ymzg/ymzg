@@ -19,6 +19,10 @@ section.part2{
   padding: 50px 0;
   background: #eee;
   text-align: center;
+  h2 {
+    font-size: 3em;
+    font-weight: normal;
+  }
   .who-we-are {
     line-height: 24px;
   }
@@ -40,6 +44,51 @@ section.part3 {
       right: 10px;
     }
   }
-
+}
+section.part4 {
+  background: #eee;
+  padding: 30px 0;
+  h2 {
+    font-size: 3em;
+    font-weight: normal;
+  }
+  h3 {
+    font-weight: normal;
+  }
+  .description {
+    margin-bottom: 24px;
+    max-height: 200px;
+  }
+  .jinshuju {
+    background: #31BB99;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+section.part5 {
+  background: #eee;
+  h2 {
+    background: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 3em;
+    font-weight: normal;
+  }
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    li {
+      padding: 20px;
+      border-top: 1px solid #ccc;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
