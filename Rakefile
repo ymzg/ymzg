@@ -4,4 +4,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+task :ci => %w(db:migrate db:test:prepare  stats)
+
 Ymzg::Application.load_tasks
