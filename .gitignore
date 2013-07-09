@@ -16,5 +16,4 @@
 *.DS_Store
 *.iml
 .idea/
-Gemfile.lock
 .rspec
