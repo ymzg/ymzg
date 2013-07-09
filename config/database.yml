@@ -7,7 +7,7 @@ development:
     adapter: postgresql
     encoding: unicode
     database: ymzg_development
-    pool: 5
+    pool: 20
     host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -17,12 +17,12 @@ test:
       adapter: postgresql
       encoding: unicode
       database: ymzg_development
-      pool: 5
+      pool: 20
       host: localhost
 
 production:
       adapter: postgresql
       encoding: unicode
       database: ymzg_development
-      pool: 5
+      pool: 20
       host: localhost
