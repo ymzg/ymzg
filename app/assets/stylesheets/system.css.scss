@@ -3,6 +3,12 @@ body {
     list-style: none;
     margin: 0;
   }
+  a {
+    color: white;
+    &:hover {
+      color: #ffffff;
+    }
+  }
 }
 header {
   background: #444;
@@ -10,8 +16,10 @@ header {
     ul {
       li {
         float: left;
-        margin: 5px 20px;
+        margin-right: 50px;
         a {
+          font-size: 19px;
+          line-height: 44px;
           text-decoration: none;
         }
       }
