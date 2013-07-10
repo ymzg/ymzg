@@ -46,15 +46,15 @@ footer {
     }
   }
   .weixin {
-    background: url(/assets/weixin.png) no-repeat;
+    background: image-url("weixin.png") no-repeat;
   }
   .weibo {
-    background: url(/assets/weibo.png) no-repeat;
+    background: image-url("weibo.png") no-repeat;
   }
   .qq {
-    background: url(/assets/qq.png) no-repeat;
+    background: image-url("qq.png") no-repeat;
   }
   .mailbox {
-    background: url(/assets/mail.png) no-repeat;
+    background: image-url("mail.png") no-repeat;
   }
 }
