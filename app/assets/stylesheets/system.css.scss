@@ -18,3 +18,35 @@ header {
     }
   }
 }
+footer {
+  clear: both;
+  height: 140px;
+  background: #2FC7AF;
+  ul {
+    width: 800px;
+    margin: 0 auto;
+    li {
+      float: left;
+      padding: 40px 70px;
+      a {
+        width: 58px;
+        height: 58px;
+        display: block;
+        font-size: 0;
+        line-height: 0;
+      }
+    }
+  }
+  .weixin {
+    background: url(/assets/weixin.png) no-repeat;
+  }
+  .weibo {
+    background: url(/assets/weibo.png) no-repeat;
+  }
+  .qq {
+    background: url(/assets/qq.png) no-repeat;
+  }
+  .mailbox {
+    background: url(/assets/mail.png) no-repeat;
+  }
+}
