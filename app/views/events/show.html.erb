@@ -1,10 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="span12">
-      <p>
-        <strong>活动名称:</strong>
-        <%= @event.name %>
-      </p>
+      <h2> <%= @event.name %></h2>
 
       <p>
         <strong>活动描述:</strong>
@@ -20,6 +17,8 @@
         <strong>活动地点:</strong>
         <%= @event.location %>
       </p>
+
+      <%= link_to "查看所有活动", events_path, :style => "color: gray" %>
     </div>
   </div>
 </div>

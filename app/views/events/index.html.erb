@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <h2>活动列表</h2>
+
+      <table class="table-bordered">
+        <tr>
+          <th>名称</th>
+          <th>时间</th>
+          <th>地点</th>
+          <th>描述</th>
+        </tr>
+
+        <% @events.each do |event| %>
+            <tr>
+              <td><%= event.name %></td>
+              <td><%= event.data %></td>
+              <td><%= event.location %></td>
+              <td><%= event.describe %></td>
+            </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>
