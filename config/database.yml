@@ -16,13 +16,13 @@ development:
 test:
       adapter: postgresql
       encoding: unicode
-      database: ymzg_development
+      database: ymzg_test
       pool: 20
       host: localhost
 
 production:
       adapter: postgresql
       encoding: unicode
-      database: ymzg_development
+      database: ymzg_production
       pool: 20
       host: localhost
