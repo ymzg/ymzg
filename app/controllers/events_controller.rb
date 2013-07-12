@@ -7,6 +7,19 @@ class EventsController < ApplicationController
     redirect_to @event
   end
 
+  def edit
+    @event = Event.find(params[:id])
+  end
+
+  def update
+    @event = Event.find(params[:id])
+    if @event.update(params[:event].permit(:name, :describe, :data, :location))
+      redirect_to @event
+    else
+      render 'edit'
+    end
+  end
+
   def show
     @event = Event.find(params[:id])
   end

@@ -9,6 +9,7 @@
           <th>时间</th>
           <th>地点</th>
           <th>描述</th>
+          <th></th>
         </tr>
 
         <% @events.each do |event| %>
@@ -17,6 +18,7 @@
               <td><%= event.data %></td>
               <td><%= event.location %></td>
               <td><%= event.describe %></td>
+              <td><%= link_to "编辑", edit_event_path(event) %></td>
             </tr>
         <% end %>
       </table>
