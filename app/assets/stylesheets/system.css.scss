@@ -3,15 +3,16 @@ body {
     list-style: none;
     margin: 0;
   }
+
+}
+header {
+  background: #444;
   a {
     color: white;
     &:hover {
       color: #ffffff;
     }
   }
-}
-header {
-  background: #444;
   nav {
     ul {
       li {
