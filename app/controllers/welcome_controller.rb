@@ -3,4 +3,8 @@ class WelcomeController < ActionController::Base
   def index
      @event = Event.all.first
   end
+
+  def admin
+
+  end
 end
