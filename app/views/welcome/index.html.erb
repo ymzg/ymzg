@@ -40,14 +40,16 @@
 <section class="part4">
   <div class="container">
     <div class="row">
-      <h2 class="text-center"><span>情系汶川</span><span>情系山区</span></h2>
+      <h2 class="text-center"><%= @event.name %></h2>
       <div class="span3 text-center">
         <%= image_tag "event-image.png" %>
       </div>
       <div class="span5">
         <h3>活动详情</h3>
+        <p><span><%= @event.location %> </span> <span><%= @event.data %> </span></p>
+
         <div class="description">
-          活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情活动详情
+          <%= @event.describe  %>
         </div>
         <a class="jinshuju" href="https://jinshuju.net/f/qFw1mq" target="_blank">我要报名</a>
       </div>
