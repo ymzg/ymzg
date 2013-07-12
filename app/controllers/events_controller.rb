@@ -1,7 +1,6 @@
 class EventsController < ApplicationController
 
   def create
-    #render text: params[:event].inspect
     @event = Event.new(event_params)
     @event.save
 
