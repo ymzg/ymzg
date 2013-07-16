@@ -11,7 +11,7 @@ GIT
     rails_log_stdout (0.0.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://ruby.taobao.org/
   specs:
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
