@@ -18,4 +18,7 @@
 + Prod 部署地址: http://ymzg-prod.herokuapp.com
 
 
+###Checkout Rails_gril branch###
++ git checkout origin/rails_girl
++ git checkout -b rails_girl
 
