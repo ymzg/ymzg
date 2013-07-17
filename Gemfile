@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'cucumber'
 gem 'selenium-webdriver'
 
+group :development do
+  gem 'sqlite3'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
