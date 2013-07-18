@@ -53,20 +53,38 @@ section.part4 {
     font-size: 3em;
     font-weight: normal;
   }
-  h3 {
-    font-weight: normal;
+  .event {
+    width:500px;
+    float:left;
+    margin-left:20px;
+    margin-right:28px;
   }
-  .description {
-    margin-bottom: 24px;
-    max-height: 200px;
+  div {
+    margin-bottom:25px;
   }
   .jinshuju {
     background: #31BB99;
     padding: 8px 10px;
     border-radius: 5px;
     font-size: 1.4em;
+    color:#ffffff;
     &:hover {
       text-decoration: none;
+    }
+  }
+  .event-time {
+    margin-bottom:00px;
+  }
+  table {
+    width:100%;
+    margin-top:20px;
+    margin-left:20px;
+    td {
+      pading:8px;
+      line-height:40px;
+      text-align:left;
+      vertical-align:top;
+      border-top:1px solid #dddddd;
     }
   }
 }

@@ -40,21 +40,39 @@
 <section class="part4">
   <div class="container">
     <div class="row">
-      <h2 class="text-center"><%= @event.name %></h2>
-      <div class="span3 text-center">
-        <%= image_tag "event-image.png" %>
-      </div>
-      <div class="span5">
-        <h3>活动详情</h3>
-        <p><span><%= @event.location %> </span> <span><%= @event.data %> </span></p>
-
-        <div class="description">
-          <%= @event.describe  %>
+      <div class="event">
+        <div>
+          <h2>情系山区</h2>
+          <p>扶贫项目：10义教队*10人=100名义教义工</p>
+          <p>
+            我国西部山区有很多孩子仍然在贫困和闭塞的环境中挣扎成长，他们渴望能得到志愿者给他们持续的爱与支持，团队为有志于参加山区义教的同学提供组织和培训服务，组建团队亲临贫困山区，为当地孩子送去知识与温暖。
+          </p>
+        </div>
+        <div class="event2">
+          <h2>情系灾区</h2>
+          <p>济困项目：10义教队*10人=100名义教义工</p>
+          <p>
+            地震又在四川大地无情地伤害我们的同胞，相比物质的重建，灾后的精神重建更困难，需要志愿者长期的付出。为传承学生志愿者对汶川地震灾区学生不离不弃的精神，团队为有志于到雅安地震灾区义教的学生志愿者提供系统的培训和服务灾民的机会。
+          </p>
         </div>
         <a class="jinshuju" href="https://jinshuju.net/f/qFw1mq" target="_blank">我要报名</a>
       </div>
-      <div class="span4 text-center">
-        <img src="http://maps.googleapis.com/maps/api/staticmap?center=30.540632,104.068646&zoom=14&size=293x293&markers=color:red%7Ccolor:red%7Clabel:A%7C30.540632,104.068646&sensor=false"/>
+      <div>
+        <%= image_tag "event-location.png" %>
+      </div>
+      <div class="event-time">
+        <table>
+          <tr>
+            <td>第一批</td>
+            <td>7月22日 - 8月9日</td>
+            <td>雅安 | 凉山 | 映秀</td>
+          </tr>
+          <tr>
+            <td>第二批</td>
+            <td>8月11日 - 8月30日</td>
+            <td>雅安 | 毕节 | 阿坝</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
