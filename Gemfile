@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use pg as database to support heroku
-gem 'pg'
 gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
@@ -28,17 +26,14 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-# Add functional/system test gems
-gem 'cucumber'
-gem 'selenium-webdriver'
-
-group :development do
-  gem 'sqlite3'
-end
-
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
+  gem 'sqlite3'
+
+  # Add functional/system test gems
+  gem 'cucumber'
+  gem 'selenium-webdriver'
 end
 
 group :doc do
@@ -59,6 +54,9 @@ end
 # gem 'debugger', group: [:development, :test]
 
 group :production do
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+
+  # Use pg as database to support heroku
+  gem 'pg'
 end
