@@ -15,11 +15,12 @@
     <img class="media-object" src="http://a.36krcnd.com/photo/7bff0b98be517f67f0c20494e6a80a8c.jpg" alt="64x64" style="width: 200px; height: 200px;" src="">
   </a>
   <div class="media-body">
-    <h3 class="media-heading"><%=@event.title%></h3>
+    <h3 class="media-heading"><%=@event.title%> (<%=  @event.ding_count%>)</h3>
     简介：
     <br>
     <%=@event.description%>
-<hr/><input type="submit" class="btn pull-right" name="btnOK" value="我要参加" >
+<hr/><!-- <input type="submit" class="btn pull-right" name="btnOK" value="我要参加" > -->
+<a href="/events/<%= @event.id %>/ding" class="btn"> 顶</a>
   </div>
 </div>
 <%  if Time.now >=  @event.event_date %>

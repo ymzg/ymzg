@@ -6,6 +6,7 @@ Ymzg::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
+  get 'events/:id/ding' => 'events#ding'
 
 
   resources :events
