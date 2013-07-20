@@ -9,7 +9,7 @@ def ding
 end
 
   def index
-    @events = Event.all
+    @events = Event.all_events
   end
 
   def new
