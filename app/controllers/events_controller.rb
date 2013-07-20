@@ -26,7 +26,15 @@ end
   end
 
   def create
-    
+    @event = Event.new(params.require(:event).permit(:title, :description, :event_date))
+    respond_to do |format|
+      if @event.save
+        format.html { redirect_to events_path, notice: "Event created success." }
+      else
+        format.html { redirect_to new_event_path, notice: "Can't add event!" }
+      end
+    end
+
   end
 
   def admin_events
@@ -52,7 +60,7 @@ end
       if @event.update(params.require(:event).permit(:title, :description, :event_date))
         format.html {redirect_to event_path(@event), notice:"Event update success."}
       else
-        format.html {redirect_to edit_event_path,notice:"Update error!"}
+        format.html { redirect_to edit_event_path, notice: "Update error!" }
       end
     end
   end
