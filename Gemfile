@@ -26,6 +26,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+#A simple fast web server
+gem "puma"
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
