@@ -1,11 +1,19 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:show, :edit, :update]
+  before_action :set_event, only: [ :edit, :update]
 
 def ding
-    @event=Event.find(params[:id])
-    @event.ding_count=@event.ding_count+1
-    @event.save
-    redirect_to event_path @event
+
+    @event=Event.find_by_id(params[:id])
+    if @event==nil
+    	#flash[:notice] = ""
+    	render :text => "没有这个活动"
+    else
+      @event.ding_count=@event.ding_count+1
+      @event.save
+      redirect_to event_path @event
+    end
+  
+  
 end
 
   def index
@@ -17,6 +25,7 @@ end
   end
 
   def show
+  	@event = Event.find_by_id(params[:id])
   end
 
   def edit
