@@ -1,7 +1,11 @@
 Ymzg::Application.routes.draw do
+
   resources :events
 
   get "stories" => "stories#index"
+
+  resources :comments
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
