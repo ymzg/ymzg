@@ -1,4 +1,7 @@
 <div class="container">
+  <% if flash[:notice] -%>
+      <div class='alert alert-success'><%=h flash[:notice] %> <span class='username'>  <%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
+  <% end -%>
   <div class="row">
     <div class="span12">
       <h3>活动列表</h3>
