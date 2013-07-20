@@ -82,20 +82,36 @@ section.part5 {
   ul {
     li {
       border-top: 1px solid #ccc;
-      img {
-        margin-right: 10px;
-      }
 
       a {
-        border-top: 10px solid transparent;
-        padding: 20px 5px 20px;
+        padding: 20px 5px;
         font-size: 16px;
         display: block;
-        color: black;
-      }
-      a:hover {
-        border-top-color: #ccc;
-        text-decoration: none;
+        color: #777;
+        position: relative;
+
+        &:hover {
+          text-decoration: none;
+          color: #333;
+
+          &:before {
+            opacity: 1;
+            left: -30px;
+          }
+        }
+
+        &:before {
+          color: #333;
+          transition: all .5s;
+          display: block;
+          content: "\27A0";
+          position: absolute;
+          font-size: 30px;
+          top: 50%;
+          margin-top: -11px;
+          opacity: 0;
+          left: -40px;
+        }
       }
     }
   }

@@ -18,3 +18,4 @@
 .idea/
 .rspec
 .rvmrc
+/db/schema.rb

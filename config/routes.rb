@@ -1,5 +1,5 @@
 Ymzg::Application.routes.draw do
-  resources :events
+  resources :events, path: "/admin/events"
 
   get "stories" => "stories#index"
 
@@ -8,13 +8,9 @@ Ymzg::Application.routes.draw do
   get 'welcome' => 'welcome#index'
 
 
-  resources :events
-
-  
   get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
 
-  get 'admin/events' => 'events#admin_events'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
