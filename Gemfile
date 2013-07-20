@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 
 gem 'rails_12factor', group: :production
 
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
