@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	color: #fff;
 	font-size: 60px;
+	line-height: 80px;
 }
 
 .container {
@@ -23,6 +24,30 @@ body {
 	border-spacing: 0;
 }
 
-.zfyx img {
-	height: 200px;
+.slideshow {
+	width: 40%;
 }
+
+.zfls .slideshow {
+	text-align: right;
+}
+
+.zfyx h2, .zfls h2 {
+	font-size: 50px;
+}
+
+.content p {
+	line-height: 26px;
+}
+
+.content {
+	padding: 20px;
+}
+
+.zfyx {background: #E0E4CC;}
+.jsy {
+	background: #E0E4CC;
+	padding: 40px 0;
+}
+
+.jsy p{line-height: 26px;}
