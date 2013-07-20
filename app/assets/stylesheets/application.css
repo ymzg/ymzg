@@ -23,3 +23,7 @@
 .login-form form {
     padding: 10px 83px;
 }
+
+.username {
+    color: black;
+}
