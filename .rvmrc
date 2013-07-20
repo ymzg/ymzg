@@ -1,1 +1,1 @@
-rvm use --create 1.9.3@ymzg
+rvm use 2.0.0 #--create 1.9.3@ymzg
