@@ -20,6 +20,11 @@ class AuthController < ApplicationController
   end
 
   def is_logined
+
+    #use this method to validate if user logined
+    #if user logined will return logined username
+    #else redirect the page to login
+
     return session[:username] unless session[:username].nil?
     redirect_to "/auth/login"
   end
