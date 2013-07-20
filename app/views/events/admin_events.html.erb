@@ -7,12 +7,15 @@
           <th>活动日期</th>
           <th>活动描述</th>
           <th>活动名称</th>
+          <th>删除</th>
         </tr>
         <% @events.each do |event| %>
             <tr>
               <td><%= event.event_date %></td>
               <td><%= event.title %></td>
               <td><%= event.description %></td>
+              <td> <%= link_to '删除',event_path(event) , method: :delete,data:{ confirm:'Are u sure?'}%></td>
+
             </tr>
         <% end %>
       </table>
