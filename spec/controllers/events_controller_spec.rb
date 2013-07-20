@@ -31,10 +31,11 @@ describe EventsController do
   end
 
   describe "DELETE #destory" do
-    #it "sho" do
-    #  get :admin_events
-    #  expect(response).to be_success
-    #end
+    it "delete a event" do
+      before_delete_count = Event.count
+      delete :destroy, :id => @event1
+      expect(Event.count).to eq before_delete_count - 1
+    end
 
     it "should render admin events" do
       delete :destroy, :id => @event1
