@@ -7,11 +7,13 @@ Ymzg::Application.routes.draw do
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
 
+
   resources :events
 
   
-  get '/auth/index' => 'auth#index'
+  get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
+
   get 'admin/events' => 'events#admin_events'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
