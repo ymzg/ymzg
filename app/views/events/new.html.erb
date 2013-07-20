@@ -1,1 +1,25 @@
-Will create form for creating event later.
+<div class="container events">
+  <h1>创建活动</h1>
+
+
+  <%= form_for(@event) do |f| %>
+      <div>
+        <%= f.label :title, "名称" %>
+        <br/>
+        <%= f.text_field :title %>
+      </div>
+      <div>
+        <%= f.label :description, "内容" %>
+        <br/>
+        <%= f.text_area :description %>
+      </div>
+      <div>
+        <%= f.label :event_date, "开始日期" %>
+        <br/>
+        <%= f.date_select :event_date %>
+      </div>
+      <div>
+        <%= f.submit "保存" %>
+      </div>
+  <% end %>
+</div>
