@@ -11,8 +11,9 @@ Ymzg::Application.routes.draw do
   resources :events
 
   
-  get '/auth/index' => 'auth#index'
+  get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
+
   get 'admin/events' => 'events#admin_events'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
