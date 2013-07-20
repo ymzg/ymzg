@@ -12,3 +12,14 @@
  *= require_tree .
  */
 
+.login-form{
+    width: 400px;
+    height: auto;
+    margin: 20px auto 20px;
+    border: 1px Solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form form {
+    padding: 10px 83px;
+}
