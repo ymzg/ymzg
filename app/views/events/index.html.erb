@@ -1,0 +1,17 @@
+<div class="container events">
+<div class="span12">
+  <table class="table">
+    <tbody>
+    <% @events.each do |event| %>
+        <tr>
+          <td>
+            <%= link_to event.title, :controller => 'events',
+                        :action => 'show', :id => event %>
+          </td>
+          <td><%= event.event_date %></td>
+        </tr>
+    <% end -%>
+    </tbody>
+  </table>
+</div>
+</div>
