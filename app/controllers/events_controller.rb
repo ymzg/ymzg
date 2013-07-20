@@ -16,6 +16,10 @@ end
 
   end
 
+  def admin_events
+    @events = Event.all()
+  end
+
   def show
   end
 
