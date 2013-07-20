@@ -13,6 +13,9 @@ Ymzg::Application.routes.draw do
   post '/auth/login' => 'auth#login'
 
   get 'admin/events' => 'events#admin_events'
+
+  get 'admin/events/new' => 'events#new'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
