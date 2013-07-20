@@ -9,6 +9,10 @@ body {
 	width: 960px;
 
 }
+header, article {
+	margin-bottom: 80px;
+
+}
 header {
 	background: #444444;
 	padding: 12px 0px;
