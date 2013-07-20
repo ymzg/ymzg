@@ -95,7 +95,7 @@ footer {
 	padding: 40px 0;
 }
 
-.jsy p{line-height: 26px;}
+.jsy p{line-height: 26px; padding: 0 20px;}
 #yingxiu-trip {
 	background: #69D2E7;
 }
@@ -110,7 +110,7 @@ footer {
 }
 
 .tupian li img {
-	width: 130px;
+	width: 170px;
 	position: relative;
 	cursor: pointer;
 }
@@ -126,10 +126,10 @@ footer {
 .tupian li {
 	float: left;
 	overflow: hidden;
-	height: 80px;
+	height: 100px;
 }
 .tupian2 {position: relative;}
-.tupian2 img{width: 130px;}
+.tupian2 img{width: 160px;}
 .tupian2 img:hover{width:700px;z-index: 100px;position: absolute;top: 0;right:0;cursor: pointer;}
 .tupian2 ul{list-style: none;}
-.tupian2 li{float: right;}
+.tupian2 li{float: right; height: 100px; overflow: hidden;}
