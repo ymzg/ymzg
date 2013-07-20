@@ -25,10 +25,23 @@ header {
 	color: #fff;
 	font-size: 19px;
 }
+.header-nav a:hover {
+	color:#40c4aa;
+}
 .header-nav li {
 	float: left;
 	margin-right: 53px;
 }
+article img {
+	width: 960px;
+
+}
+.time {
+	color: #40c4aa;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
 .clear {
 	overflow: hidden;
 }

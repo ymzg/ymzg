@@ -1,0 +1,15 @@
+<%- @event.comments.each do |comment| %>
+
+  <div style="font-weight: bold">
+  	<%= comment.author %>
+  </div>
+<div style="margin-bottom: 0.5em">
+  <%= comment.content %>
+  </div>
+
+<%- end %>
+
+<div>
+  <%= render "comments/form" %>
+</div>
+

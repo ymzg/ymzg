@@ -17,7 +17,8 @@
               <td><%= event.event_date %></td>
               <td><%= event.title %></td>
               <td><%= event.description %></td>
-              <td> <%= link_to 'Delete',event_path(event) , method: :delete,data:{ confirm:'删除活动之后将无法恢复，你确认要删除吗？'}, :class => 'btn btn-small'%></td>
+              <td> <%= link_to '修改',edit_event_path(event) , :class => 'btn btn-small'%></td>
+              <td> <%= link_to '删除',event_path(event) , method: :delete, data:{ confirm:'删除活动之后将无法恢复，你确认要删除吗？'}, :class => 'btn btn-small'%></td>
 
             </tr>
         <% end %>

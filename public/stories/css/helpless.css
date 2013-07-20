@@ -1,29 +1,58 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
+  background: #eee;
 
 }
-header {
+p {
+  font-size: 14px;
+}
+nav{
+  background-color: black;
+  line-height: 44px;
+}
+nav li{
+  margin-right: 50px;
+}
+nav a{
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.title {
   padding: 50px 0;
   text-align: center;
-  background: #eee;
 }
+h2{
+  font-size: 42px;
+  font-weight: normal;
+}
+
 .image-list {
-  margin: 0 auto;
-  width: 75%;
-  padding: 19px 0;
   background-color: #31bb99
+}
+ul {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 3px;
 }
 img.small {
   width: 191px;
   height: 142px;
 }
-li {
+nav li,.image-list li, footer li  {
   list-style-type: none;
   display: inline;
 }
 
-.article {
+.content {
   padding: 23px 70px;
+}
+
+.article{
+   width: 980px;
+  margin: 0 auto;
+
 }
 

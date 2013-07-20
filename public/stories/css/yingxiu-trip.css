@@ -4,6 +4,51 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.main-container {
+	margin: 0 auto;
+	width: 960px;
+
+}
+header {
+	background: #444444;
+	padding: 12px 0px;
+}
+.header-nav {
+	list-style: none;
+}
+.header-nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 19px;
+}
+.header-nav li {
+	float: left;
+	margin-right: 53px;
+	list-style: none;
+}
+
+.header-nav ul {
+	margin: 0;
+	padding: 0;
+	height: 20px;
+}
+
+.clear {
+	overflow: hidden;
+}
+
+footer {
+	background: #40c4aa;
+	padding: 40px;
+}
+
+
 .header {
 	background-color: #69D2E7;
 	padding: 40px 0;
@@ -50,7 +95,41 @@ body {
 	padding: 40px 0;
 }
 
-.jsy p{line-height: 26px;}
+.jsy p{line-height: 26px; padding: 0 20px;}
 #yingxiu-trip {
 	background: #69D2E7;
 }
+
+.tupian {
+	position: relative;
+}
+.tupian ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tupian li img {
+	width: 170px;
+	position: relative;
+	cursor: pointer;
+}
+
+.tupian li img:hover {
+	width: 700px;
+	/*height: 200px;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.tupian li {
+	float: left;
+	overflow: hidden;
+	height: 100px;
+}
+.tupian2 {position: relative;}
+.tupian2 img{width: 160px;}
+.tupian2 img:hover{width:700px;z-index: 100px;position: absolute;top: 0;right:0;cursor: pointer;}
+.tupian2 ul{list-style: none;}
+.tupian2 li{float: right; height: 100px; overflow: hidden;}

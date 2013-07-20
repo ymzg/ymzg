@@ -4,8 +4,8 @@ source 'http://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'rails_12factor', group: :production
 gem 'pg'
-gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
