@@ -9,3 +9,4 @@
 
 Event.create(:title => "情系汶川", :description => "去汶川地区义教", :event_date => Time.now)
 Event.create(:title => "情系山区", :description => "去雅安山区义教", :event_date => Time.now)
+User.create username: 'root', password: 'root', is_admin: true
