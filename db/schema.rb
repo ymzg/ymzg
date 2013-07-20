@@ -11,13 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130709121719) do
+ActiveRecord::Schema.define(version: 20130720053139) do
 
   create_table "events", force: true do |t|
-    t.string   "name"
-    t.string   "describe"
-    t.datetime "data"
-    t.string   "location"
+    t.string   "title"
+    t.text     "description"
+    t.date     "event_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.boolean  "is_admin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

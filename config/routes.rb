@@ -4,6 +4,9 @@ Ymzg::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
+
+  get '/auth/index' => 'auth#index'
+  post '/auth/login' => 'auth#login'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
