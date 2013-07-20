@@ -1,0 +1,11 @@
+<%- @event.comments.each do |comment| %>
+
+  <div style="font-weight: bold ">
+  	<%= comment.author %>:
+  </div>
+<div>
+  <%= comment.content %>
+  </div>
+
+<%- end %>
+

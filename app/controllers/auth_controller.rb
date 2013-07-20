@@ -13,9 +13,20 @@ class AuthController < ApplicationController
       redirect_to :back
     else
       flash[:notice]="\u767b\u5f55\u6210\u529f\uff01"
-      redirect_to "/events"
+      session[:username] = user[:username]
+      redirect_to "/admin/events"
 
     end
+  end
+
+  def is_logined
+
+    #use this method to validate if user logined
+    #if user logined will return logined username
+    #else redirect the page to login
+
+    return session[:username] unless session[:username].nil?
+    redirect_to "/auth/login"
   end
 
 end

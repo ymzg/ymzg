@@ -1,16 +1,24 @@
 Ymzg::Application.routes.draw do
-  resources :events, path: "/admin/events"
+
+  resources :events
 
   get "stories" => "stories#index"
+
+  resources :comments
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
   get 'events/:id/ding' => 'events#ding'
-
-
+  
   get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
+  get '/auth/session_test' => 'auth#is_logined'
+
+  get 'admin/events' => 'events#admin_events'
+
+  get 'admin/events/new' => 'events#new'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
