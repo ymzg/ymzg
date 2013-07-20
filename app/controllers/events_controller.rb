@@ -50,7 +50,7 @@ end
   def update
     respond_to do |format|
       if @event.update(params.require(:event).permit(:title, :description, :event_date))
-        format.html {redirect_to @event,notice:"Event update success."}
+        format.html {redirect_to event_path(@event), notice:"Event update success."}
       else
         format.html {redirect_to edit_event_path,notice:"Update error!"}
       end
