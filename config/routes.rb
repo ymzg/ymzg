@@ -11,7 +11,6 @@ Ymzg::Application.routes.draw do
   
   get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
-  get '/auth/session_test' => 'auth#is_logined'
 
   get 'admin/events' => 'events#admin_events'
 
