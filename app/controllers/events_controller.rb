@@ -21,7 +21,15 @@ end
   end
 
   def new
+    @event = Event.new
+  end
 
+  def create
+    
+  end
+
+  def admin_events
+    @events = Event.all()
   end
 
   def show
