@@ -13,7 +13,7 @@ end
   end
 
   def new
-
+    @event = Event.new
   end
 
   def admin_events
