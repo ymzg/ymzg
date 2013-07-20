@@ -1,5 +1,8 @@
 <div class="container events">
-<div class="span12">
+  <% if flash[:notice] -%>
+      <div class='alert alert-success'><%=h flash[:notice] %></div>
+  <% end -%>
+  <div class="span12">
   <table class="table">
     <tbody>
     <% @events.each do |event| %>

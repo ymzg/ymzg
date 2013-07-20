@@ -8,6 +8,7 @@ Ymzg::Application.routes.draw do
   get 'welcome' => 'welcome#index'
   get 'events/:id/ding' => 'events#ding'
 
+  resources :events
 
   get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
