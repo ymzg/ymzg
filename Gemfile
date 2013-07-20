@@ -1,12 +1,17 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
 gem 'rails_12factor', group: :production
+<<<<<<< HEAD
+
+=======
 # Use pg as database to support heroku
 gem 'pg'
 gem 'rails_12factor'
+>>>>>>> 26ec8474d07e2020a7fbb5b69ca08eaee0064e04
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
