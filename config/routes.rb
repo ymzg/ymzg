@@ -8,11 +8,6 @@ Ymzg::Application.routes.draw do
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
   get 'events/:id/ding' => 'events#ding'
-
-  resources :events
-
-  resources :events
-
   
   get '/auth/login' => 'auth#index'
   post '/auth/login' => 'auth#login'
