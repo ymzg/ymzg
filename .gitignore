@@ -17,8 +17,4 @@
 *.iml
 .idea/
 .rspec
-<<<<<<< HEAD
 .rvmrc
-=======
-db/schema.rb
->>>>>>> 89a280317697501769bbb6857964bdd6e38d0774
