@@ -6,7 +6,13 @@ Ymzg::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
+<<<<<<< HEAD
   resources :events
+=======
+
+  get '/auth/index' => 'auth#index'
+  post '/auth/login' => 'auth#login'
+>>>>>>> 029bb8757a888f7c7a9cdb2ae9b58f0839e63944
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

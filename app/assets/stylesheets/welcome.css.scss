@@ -80,13 +80,22 @@ section.part5 {
     font-weight: normal;
   }
   ul {
-    width: 80%;
-    margin: 0 auto;
     li {
-      padding: 20px;
       border-top: 1px solid #ccc;
       img {
         margin-right: 10px;
+      }
+
+      a {
+        border-top: 10px solid transparent;
+        padding: 20px 5px 20px;
+        font-size: 16px;
+        display: block;
+        color: black;
+      }
+      a:hover {
+        border-top-color: #ccc;
+        text-decoration: none;
       }
     }
   }
