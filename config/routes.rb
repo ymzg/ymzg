@@ -4,6 +4,9 @@ Ymzg::Application.routes.draw do
 
   get "stories" => "stories#index"
 
+  resources :comments
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
