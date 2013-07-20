@@ -1,3 +1,15 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.table a {
+  color: #333333;
+}
+
+.events a:hover {
+  color: #333333;
+}
+.admin-events {
+  a:hover {
+      color: red;
+  }
+}

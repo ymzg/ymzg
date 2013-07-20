@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+	background-color: #69D2E7;
+	padding: 40px 0;
+}
+
+.header h1 {
+	margin: 0;
+	color: #fff;
+	font-size: 60px;
+	line-height: 80px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+.zfyx table {
+	border-spacing: 0;
+}
+
+.slideshow {
+	width: 40%;
+}
+
+.zfls .slideshow {
+	text-align: right;
+}
+
+.zfyx h2, .zfls h2 {
+	font-size: 50px;
+}
+
+.content p {
+	line-height: 26px;
+}
+
+.content {
+	padding: 20px;
+}
+
+.zfyx {background: #E0E4CC;}
+.jsy {
+	background: #E0E4CC;
+	padding: 40px 0;
+}
+
+.jsy p{line-height: 26px;}
+#yingxiu-trip {
+	background: #69D2E7;
+}

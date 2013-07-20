@@ -12,7 +12,16 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
-ActiveRecord::Schema.define(version: 20130720051044) do
+ActiveRecord::Schema.define(version: 20130720074044) do
+
+  create_table "comments", force: true do |t|
+    t.integer  "event_id"
+    t.string   "author"
+    t.string   "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+>>>>>>> 98c9a35
 
   create_table "comments", force: true do |t|
     t.integer  "event_id"
@@ -26,6 +35,15 @@ ActiveRecord::Schema.define(version: 20130720051044) do
     t.string   "title"
     t.text     "description"
     t.date     "event_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "ding_count",  default: 0
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.boolean  "is_admin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

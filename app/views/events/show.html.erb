@@ -1,0 +1,33 @@
+
+
+
+
+
+<div class="container"> 
+
+<ul class="breadcrumb">
+  <li><a href="/events" style="color: #0088cc;">活动列表</a> <span class="divider">/</span></li>
+  <li class="active"><%= @event.title %></li>
+</ul>
+
+<div class="media well">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="http://a.36krcnd.com/photo/7bff0b98be517f67f0c20494e6a80a8c.jpg" alt="64x64" style="width: 200px; height: 200px;" src="">
+  </a>
+  <div class="media-body">
+    <h3 class="media-heading"><%=@event.title%> (<%=  @event.ding_count%>)</h3>
+    简介：
+    <br>
+    <%=@event.description%>
+<hr/><!-- <input type="submit" class="btn pull-right" name="btnOK" value="我要参加" > -->
+<a href="/events/<%= @event.id %>/ding" class="btn"> 顶</a>
+  </div>
+</div>
+<%  if Time.now >=  @event.event_date %>
+
+
+<%else%>
+活动过期
+
+<%end%>
+</div>
