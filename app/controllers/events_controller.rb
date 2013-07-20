@@ -13,4 +13,7 @@ end
 
   end
 
+  def admin_events
+    @events = Event.all();
+  end
 end
