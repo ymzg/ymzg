@@ -29,3 +29,8 @@ body {
 p {
 	text-indent: 0.9cm;
 }
+.yx-img{
+	float: left;
+	height: 133px;
+	margin-right: 10px;
+}
