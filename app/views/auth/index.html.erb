@@ -1,15 +1,15 @@
 <div>
   <%= form_for(@user, url: {controller:"auth",action: "login"}) do |f| %>
       <div>
-        <label>user name</label>
+        <label>用户名:</label>
         <%= f.text_field :username %>
       </div>
       <div>
-        <label>password</label>
-        <%= f.text_field :password %>
+        <label>密码:</label>
+        <%= f.password_field :password %>
       </div>
       <div>
-        <%= f.submit %>
+        <%= f.submit "登录"%>
       </div>
   <% end %>
 
