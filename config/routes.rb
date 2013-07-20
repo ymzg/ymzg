@@ -1,5 +1,6 @@
 Ymzg::Application.routes.draw do
   resources :events, path: "/admin/events"
+  resources :events, path: "/events"
 
   get "stories" => "stories#index"
 
