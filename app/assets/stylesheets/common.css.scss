@@ -25,6 +25,20 @@ header {
     }
   }
 }
+
+.button {
+  background: #31BB99;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 1.4em;
+  color:#ffffff;
+  &:hover {
+    text-decoration: none;
+    background: lighten(#31BB99, 10);
+    color: #fff;
+  }
+}
+
 footer {
   clear: both;
   height: 140px;

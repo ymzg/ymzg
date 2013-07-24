@@ -8,24 +8,30 @@ $light-gray:#eee;
   &:nth-child(even){
     background-color: $light-gray;
   }
-}
-
-section{
-    padding: 50px 20px;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    h1 {
+  h1 {
       font-size: 5.5em;
       color: #ffffff;
       margin-bottom: 20px;
       line-height: 80px;
     }
-    h2 {
-    font-size: 3em;
-    line-height: 1.5em;
-    font-weight: normal;
-    }
+  h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: normal;
+  }
+  .row-header{
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+section{
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 940px;
+    margin: 0 auto;
+    
 }
 
 section#main-title{
@@ -66,34 +72,27 @@ section#carousel{
 
 section#featured{
   padding: 30px 0;
-  overflow: hidden;
   margin: 0 auto;
 
+  .event-wrapper{
+    width: 55%;
+    float: left;
+    .button{float: left;}
+  }
+  .map{
+    float: right;
+    width: 40%
+  }
   .event {
-    width:50%;
-    float:left;
-    margin-left:20px;
-    margin-right:28px;
+    display: inline-block;
     text-align: left;
   }
 
-  .jinshuju {
-    background: #31BB99;
-    padding: 8px 10px;
-    border-radius: 5px;
-    font-size: 1.4em;
-    color:#ffffff;
-    &:hover {
-      text-decoration: none;
-    }
-  }
   .event-time {
-    margin-bottom:00px;
+    padding-top: 20px;
   }
   table {
     width:100%;
-    margin-top:20px;
-    margin-left:20px;
     td {
       padding:8px;
       line-height:40px;
@@ -108,10 +107,6 @@ section#stories{
   position: relative;
   padding: 0;
   width: 100%;
-  h2 {
-    background: #ffffff;
-    padding: 10px;
-  }
   ul {
     width: 80%;
     margin: 0 auto;
@@ -127,5 +122,7 @@ section#stories{
 
 @media screen and (max-width: 768px){
   section{width: 100%;}
-  .event{width: 90% !important;}
+  .event-wrapper, .map, ul{
+    width: 90% !important;
+  }
 }
