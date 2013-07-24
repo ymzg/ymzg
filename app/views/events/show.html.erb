@@ -20,15 +20,7 @@
 		    <br>
 		    <%=@event.description%>
 		<hr/><!-- <input type="submit" class="btn pull-right" name="btnOK" value="我要参加" > -->
-		
 
-		<%  if Time.now >=  @event.event_date %>	
-			<a href="/events/<%= @event.id %>/ding" class="btn"> 顶(<%=  @event.ding_count%>)</a>
-		<%else%>
-			活动过期
-		<%end%>
-
-        <%= render 'comments/list' %>
 
 		  </div>
 		</div>
