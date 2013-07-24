@@ -1,7 +1,5 @@
 <div class="container">
-  <div class="float-right">
-    <%= link_to '注销', auth_logout_path, :class => 'btn btn-small'%>
-  </div>
+  <%= render :partial => 'logout' %>
   <% if flash[:notice] -%>
       <div class='alert alert-success'><%=h flash[:notice] %> <span class='username'>  <%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
   <% end -%>
