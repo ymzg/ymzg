@@ -1,35 +1,52 @@
-section.part1 {
-  text-align: center;
-  padding: 40px 0;
-  background: #31BB99;
-  .slogn {
+$green:#31BB99;
+$light-gray:#eee;
+
+.row{
+  &:nth-child(odd){
+    background-color: $green;
+  }
+  &:nth-child(even){
+    background-color: $light-gray;
+  }
+}
+
+section{
+    padding: 50px 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+      font-size: 5.5em;
+      color: #ffffff;
+      margin-bottom: 20px;
+      line-height: 80px;
+    }
+    h2 {
+    font-size: 3em;
+    line-height: 1.5em;
+    font-weight: normal;
+    }
+}
+
+section#main-title{
+  .slogan {
     font-size: 24px;
     span:first-child {
       margin-right: 40px;
     }
   }
-  h1 {
-    font-size: 5.5em;
-    color: #ffffff;
-    margin-bottom: 20px;
-    line-height: 80px;
-  }
+  
 }
-section.part2{
-  padding: 50px 0;
-  background: #eee;
-  text-align: center;
-  h2 {
-    font-size: 3em;
-    font-weight: normal;
-  }
+
+section#summary{
+  
   .who-we-are {
     line-height: 24px;
-    font-weight: bold;
   }
 }
-section.part3 {
-  background: #31BB99;
+
+section#carousel{
+  padding: 0;
   #slides {
     display: none;
     position: relative;
@@ -46,22 +63,20 @@ section.part3 {
     }
   }
 }
-section.part4 {
-  background: #eee;
+
+section#featured{
   padding: 30px 0;
-  h2 {
-    font-size: 3em;
-    font-weight: normal;
-  }
+  overflow: hidden;
+  margin: 0 auto;
+
   .event {
-    width:500px;
+    width:50%;
     float:left;
     margin-left:20px;
     margin-right:28px;
+    text-align: left;
   }
-  div {
-    margin-bottom:25px;
-  }
+
   .jinshuju {
     background: #31BB99;
     padding: 8px 10px;
@@ -80,7 +95,7 @@ section.part4 {
     margin-top:20px;
     margin-left:20px;
     td {
-      pading:8px;
+      padding:8px;
       line-height:40px;
       text-align:left;
       vertical-align:top;
@@ -88,15 +103,14 @@ section.part4 {
     }
   }
 }
-section.part5 {
-  background: #eee;
+section#stories{
+  background-color: #eee;
+  position: relative;
+  padding: 0;
+  width: 100%;
   h2 {
     background: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    font-size: 3em;
-    font-weight: normal;
+    padding: 10px;
   }
   ul {
     width: 80%;
@@ -111,3 +125,7 @@ section.part5 {
   }
 }
 
+@media screen and (max-width: 768px){
+  section{width: 100%;}
+  .event{width: 90% !important;}
+}

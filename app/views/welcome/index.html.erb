@@ -1,105 +1,84 @@
-<section class="part1">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h1>义梦中国</h1>
-        <p class="slogn"><span>义不容辞地行义</span> <span>义无反顾地逐梦</span></p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="row"> 
+  <section id="main-title">
+      <h1>义梦中国</h1>
+      <p class="slogan"><span>义不容辞地行义</span> <span>义无反顾地逐梦</span></p>
+  </section>
+</div>
 
-<section class="part2">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h2>我们是谁？</h2>
-        <p class="who-we-are text-left">
-          【义梦中国志愿者学院】成立于2013年4月20日，总部在汶川大地震震中映秀镇的汶川青少年活动中心志愿者培养基地。义梦中国的使命是发扬国人在汶川大地震守望相助、不离不弃的志愿者精神，让更多中国人可以义不容辞地行义，义无反顾地追梦。在义梦中国志愿者学院毕业的同学，通过义教，都能把自己最美的那一面展现出来，找到自己的梦想所在，并找到力量去追寻自己的梦想，从而影响别人也可以去追寻自己的梦想。
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="row">
+  <section class="summary">
+    <h2>我们是谁？</h2>
+    <p class="who-we-are text-left">
+      【义梦中国志愿者学院】成立于2013年4月20日，总部在汶川大地震震中映秀镇的汶川青少年活动中心志愿者培养基地。义梦中国的使命是发扬国人在汶川大地震守望相助、不离不弃的志愿者精神，让更多中国人可以义不容辞地行义，义无反顾地追梦。在义梦中国志愿者学院毕业的同学，通过义教，都能把自己最美的那一面展现出来，找到自己的梦想所在，并找到力量去追寻自己的梦想，从而影响别人也可以去追寻自己的梦想。
+    </p>
+  </section>
+</div>
 
-<section class="part3">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <div id="slides">
-            <%= image_tag "slide1.jpg" %>
-            <%= image_tag "slide2.jpg" %>
-            <%= image_tag "slide3.jpg" %>
-            <%= image_tag "slide4.jpg" %>
+<div class="row">
+  <section id="carousel">
+
+    <div id="slides">
+        <%= image_tag "slide1.jpg" %>
+        <%= image_tag "slide2.jpg" %>
+        <%= image_tag "slide3.jpg" %>
+        <%= image_tag "slide4.jpg" %>
+    </div>
+
+  </section>
+</div>
+
+<div class="row">
+  <section id="featured">
+        <div class="event">
+          <div>
+            <h2>情系山区</h2>
+            <p>扶贫项目：10义教队*10人=100名义教义工</p>
+            <p>
+              我国西部山区有很多孩子仍然在贫困和闭塞的环境中挣扎成长，他们渴望能得到志愿者给他们持续的爱与支持，团队为有志于参加山区义教的同学提供组织和培训服务，组建团队亲临贫困山区，为当地孩子送去知识与温暖。
+            </p>
+          </div>
+          <div class="event2">
+            <h2>情系灾区</h2>
+            <p>济困项目：10义教队*10人=100名义教义工</p>
+            <p>
+              地震又在四川大地无情地伤害我们的同胞，相比物质的重建，灾后的精神重建更困难，需要志愿者长期的付出。为传承学生志愿者对汶川地震灾区学生不离不弃的精神，团队为有志于到雅安地震灾区义教的学生志愿者提供系统的培训和服务灾民的机会。
+            </p>
+          </div>
+          <a class="jinshuju" href="https://jinshuju.net/f/qFw1mq" target="_blank">我要报名</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="part4">
-  <div class="container">
-    <div class="row">
-      <div class="event">
         <div>
-          <h2>情系山区</h2>
-          <p>扶贫项目：10义教队*10人=100名义教义工</p>
-          <p>
-            我国西部山区有很多孩子仍然在贫困和闭塞的环境中挣扎成长，他们渴望能得到志愿者给他们持续的爱与支持，团队为有志于参加山区义教的同学提供组织和培训服务，组建团队亲临贫困山区，为当地孩子送去知识与温暖。
-          </p>
+          <%= image_tag "event-location.png" %>
         </div>
-        <div class="event2">
-          <h2>情系灾区</h2>
-          <p>济困项目：10义教队*10人=100名义教义工</p>
-          <p>
-            地震又在四川大地无情地伤害我们的同胞，相比物质的重建，灾后的精神重建更困难，需要志愿者长期的付出。为传承学生志愿者对汶川地震灾区学生不离不弃的精神，团队为有志于到雅安地震灾区义教的学生志愿者提供系统的培训和服务灾民的机会。
-          </p>
-        </div>
-        <a class="jinshuju" href="https://jinshuju.net/f/qFw1mq" target="_blank">我要报名</a>
-      </div>
-      <div>
-        <%= image_tag "event-location.png" %>
-      </div>
-      <div class="event-time">
-        <table>
-          <tr>
-            <td>第一批</td>
-            <td>7月22日 - 8月9日</td>
-            <td>雅安 | 凉山 | 映秀</td>
-          </tr>
-          <tr>
-            <td>第二批</td>
-            <td>8月11日 - 8月30日</td>
-            <td>雅安 | 毕节 | 阿坝</td>
-          </tr>
-        </table>
-      </div>
+        <div class="event-time">
+          <table>
+            <tr>
+              <td>第一批</td>
+              <td>7月22日 - 8月9日</td>
+              <td>雅安 | 凉山 | 映秀</td>
+            </tr>
+            <tr>
+              <td>第二批</td>
+              <td>8月11日 - 8月30日</td>
+              <td>雅安 | 毕节 | 阿坝</td>
+            </tr>
+          </table>
     </div>
-  </div>
-</section>
-
-<section class="part5">
-  <h2>团队的成长</h2>
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <ul>
-          <li>
-            <%= image_tag "icon.png" %>
-            <span>团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长</span>
-          </li>
-          <li>
-            <%= image_tag "icon.png" %>
-            <span>团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长</span>
-          </li>
-          <li>
-            <%= image_tag "icon.png" %>
-            <span>团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长</span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+  </section>
+  <section id="stories">
+    <h2>团队的成长</h2>
+          <ul>
+            <li>
+              <%= image_tag "icon.png" %>
+              <span>团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长</span>
+            </li>
+            <li>
+              <%= image_tag "icon.png" %>
+              <span>团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长</span>
+            </li>
+            <li>
+              <%= image_tag "icon.png" %>
+              <span>团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长团队的成长</span>
+            </li>
+          </ul>
+  </section>
+</div>
