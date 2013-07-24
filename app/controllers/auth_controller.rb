@@ -29,4 +29,9 @@ class AuthController < ApplicationController
     redirect_to "/auth/login"
   end
 
+  def logout
+    session[:username] = nil
+    redirect_to "/events"
+  end
+
 end
