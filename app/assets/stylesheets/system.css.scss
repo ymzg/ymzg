@@ -36,10 +36,10 @@ footer {
     margin: 0 auto;
     li {
       float: left;
-      padding: 40px 70px;
+      padding: 10px 40px;
       a {
-        width: 58px;
-        height: 58px;
+        width: 110px;
+        height: 110px;
         display: block;
         font-size: 0;
         line-height: 0;
@@ -47,15 +47,38 @@ footer {
     }
   }
   .weixin {
-    background: image-url("weixin.png") no-repeat;
+    background: image-url("weixin.png") no-repeat 10px;
+    &:hover{
+      .weixin-img {
+        display: block;
+      }
+    }
+    .weixin-img{
+      display:none; 
+      position: relative;
+      bottom:-5px;
+    }
   }
   .weibo {
-    background: image-url("weibo.png") no-repeat;
+    background: image-url("weibo.png") no-repeat 10px;
   }
   .qq {
-    background: image-url("qq.png") no-repeat;
+    background: image-url("qq.png") no-repeat 10px;
+    &:hover {
+      .qqhao {
+        display: block;   
+      } 
+      text-decoration:none;
+    }
+    .qqhao {
+      display:none;
+      font-size:26px;
+      position:relative;
+      top:53px; 
+      right:48px;
+    }
   }
   .mailbox {
-    background: image-url("mail.png") no-repeat;
+    background: image-url("mail.png") no-repeat 10px;
   }
 }
