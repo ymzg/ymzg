@@ -6,6 +6,7 @@ describe EventsController do
     @event1 = Event.create({:title => "name", :description => "description", :event_date => Time.new() } )
     @event1.save
     @event2 = Event.create!
+    mock(session[:username] = "mock")
   end
 
 
