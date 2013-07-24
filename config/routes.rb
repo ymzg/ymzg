@@ -3,6 +3,7 @@ Ymzg::Application.routes.draw do
   # first created -> highest priority.
   get 'welcome' => 'welcome#index'
   get 'admin' => 'welcome#admin'
+  get 'stories' => 'stories#index'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
