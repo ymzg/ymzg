@@ -44,7 +44,6 @@ end
 
   def show
   	@event = Event.find_by_id(params[:id])
-    @comment = @event.comments.build
   end
 
   def edit
