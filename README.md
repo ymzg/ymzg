@@ -17,5 +17,23 @@
 + Sys 部署地址: http://ymzg-sys.herokuapp.com
 + Prod 部署地址: http://ymzg-prod.herokuapp.com
 
+###Postgresql###
 
+Check your version of postgresql
+  psql --version
+
+Check to be sure your pgsql route is correct
+  which psql
+
+Update to postgresql lastest with homebrew.
+  brew install postgresql
+
+Initialize postgres
+        initdb /usr/local/var/postgres
+
+Start your postgres server
+        pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+
+To stop your postgres server
+        pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop
 
