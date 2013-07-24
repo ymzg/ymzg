@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string :title
       t.string :location
       t.text :description
-      t.string :image_url
+      t.attachment :image
       t.date :event_date
       
       t.timestamps

@@ -27,7 +27,7 @@ end
   end
 
   def create
-    @event = Event.new(params.require(:event).permit(:title, :description, :event_date))
+    @event = Event.new(params.require(:event).permit(:title, :description,:image, :location, :event_date))
     respond_to do |format|
       if @event.save
         format.html { redirect_to admin_events_path, notice: "Event created success." }
