@@ -30,7 +30,7 @@ end
     @event = Event.new(params.require(:event).permit(:title, :description, :event_date))
     respond_to do |format|
       if @event.save
-        format.html { redirect_to events_path, notice: "Event created success." }
+        format.html { redirect_to admin_events_path, notice: "Event created success." }
       else
         format.html { redirect_to new_event_path, notice: "Can't add event!" }
       end
