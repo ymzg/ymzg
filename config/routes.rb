@@ -18,4 +18,6 @@ Ymzg::Application.routes.draw do
   get 'admin/events' => 'events#admin_events'
   get 'admin/events/new' => 'events#new'
 
+  root :to => 'welcome#index'
+
 end
