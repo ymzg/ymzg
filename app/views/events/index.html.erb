@@ -13,6 +13,8 @@
                         :action => 'show', :id => event %>
           </td>
           <td><%= event.event_date %></td>
+          <td><%= image_tag event.image.url(:thumb) %></td>
+          <td><%= event.location %></td>
         </tr>
     <% end -%>
     </tbody>

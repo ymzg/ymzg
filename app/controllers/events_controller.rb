@@ -27,16 +27,14 @@ end
   end
 
   def create
-    @event = Event.new(params.require(:event).permit(:title, :description,:image, :location, :event_date))
-    respond_to do |format|
-      if @event.save
-        format.html { redirect_to admin_events_path, notice: "Event created success." }
-      else
-        format.html { redirect_to new_event_path, notice: "Can't add event!" }
-      end
+    @event = Event.new(params.require(:event).permit(:title, :description, :image, :location, :event_date))
+    if @event.save
+      redirect_to admin_events_path
+    else
+      render 'new'
     end
-
   end
+
 
   def admin_events
     @events = Event.all()
