@@ -1,38 +1,3 @@
-$green:#31BB99;
-$light-gray:#eee;
-
-.row{
-  &:nth-child(odd){
-    background-color: $green;
-  }
-  &:nth-child(even){
-    background-color: $light-gray;
-  }
-  h1 {
-      font-size: 5.5em;
-      color: #ffffff;
-      margin-bottom: 20px;
-      line-height: 80px;
-    }
-  h2 {
-  font-size: 3em;
-  line-height: 1.5em;
-  font-weight: normal;
-  }
-  .row-header{
-    background: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
-}
-
-section{
-    padding: 50px 20px;
-    text-align: center;
-    max-width: 940px;
-    margin: 0 auto;
-    
-}
 
 section#main-title{
   .slogan {
@@ -45,7 +10,6 @@ section#main-title{
 }
 
 section#summary{
-  
   .who-we-are {
     line-height: 24px;
   }
@@ -122,7 +86,6 @@ section#stories{
 }
 
 @media screen and (max-width: 768px){
-  section{width: 100%;}
   .event-wrapper, .map, ul{
     width: 90% !important;
   }

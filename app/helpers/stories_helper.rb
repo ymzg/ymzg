@@ -2,11 +2,14 @@
 # encoding: utf-8
 module StoriesHelper
 
-def story_1
-	content_tag(:div, :class=>'story') do
-
-		content_tag(:h1, "情牵映秀, 心系芦山")+
-		content_tag(:p, "我一直在想我应该写些什么来记录这次的活动，又应该怎么写才能把自己表达出自己的心情，让大家都感觉得到这次活动的意义，明白‘义梦中国’这个团队的努力奋斗的目标。")+
+def story_1_header
+	content_tag(:section, :class=>"story-header")do
+			content_tag(:h1, "情牵映秀, 心系芦山")+
+			content_tag(:p, "我一直在想我应该写些什么来记录这次的活动，又应该怎么写才能把自己表达出自己的心情，让大家都感觉得到这次活动的意义，明白‘义梦中国’这个团队的努力奋斗的目标。")
+		end
+end
+def story_1_body
+	content_tag(:section, :class=>'story-body') do
 
 		content_tag(:h2, "到达映秀")+
 		content_tag(:p, "现在距离5·12大地震已经过去整整五年多了，四面被急流环绕的映秀镇也是日益漂亮。刚到映秀镇的那天下午，我就被它的美丽所吸引，这里所有的建筑都是以藏族风格，羌族风格，川西居民风格三大风格修建的，象征真映秀人民都是一家人，大家共同努力，把家园建设的更加美丽。晚饭后，在梁老师的安排下，我和映菊住进了袁芳家，给了我彻彻底底了解映秀的机会，这晚我感觉自己也成了映秀的一份子。第二天，我们早早的起了床，吃了大厨袁芳烧的早饭，我们一行人在梁老师的带领下，乘车来到了半山腰的居民家。")+
@@ -26,5 +29,21 @@ def story_1
 	end	
 end
 
+def story_2_header
+	content_tag(:section, :class=>"story-header")do
+			content_tag(:h1, "探索之励志友爱读书会")
+		end
+end
+
+def story_2_body
+	content_tag(:section, :class=>'story-body') do
+
+		content_tag(:h2, "励志友爱读书会")+
+		content_tag(:p, "成立于2011年8月，是由大学生公益联盟和邻水义工共同发起创意的一个支教延伸公益项目。 目的是给乡村孩子们提供一个发现自我、认识自我并不断得到锻炼的成长平台。")+
+		content_tag(:p,"我们在陪同孩子能养成读书、爱书的习惯的同时，关注周末及节、假日山区留守儿童的课余生活。 利用周末的时间，通过读书会的形式，凝聚更多的乡村儿童参与相关活动。")+
+		content_tag(:p,"目前主要开展演讲、表演等多样的集体活动。")
+	end
+
+end
 
 end

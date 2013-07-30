@@ -1,27 +1,25 @@
-<div class="container">
-  <div class="row">
-    <div class="span12">
-      <h2>活动列表</h2>
+<section>
+  <h2>活动列表</h2>
 
-      <table class="table-bordered">
+  <table class="table-bordered">
+    <tr>
+      <th>名称</th>
+      <th>时间</th>
+      <th>地点</th>
+      <th>描述</th>
+      <th></th>
+    </tr>
+
+    <% @events.each do |event| %>
         <tr>
-          <th>名称</th>
-          <th>时间</th>
-          <th>地点</th>
-          <th>描述</th>
-          <th></th>
+          <td><%= event.name %></td>
+          <td><%= event.data %></td>
+          <td><%= event.location %></td>
+          <td><%= event.describe %></td>
+          <td><%= link_to "编辑", edit_event_path(event) %></td>
         </tr>
+    <% end %>
+  </table>
+</section>
 
-        <% @events.each do |event| %>
-            <tr>
-              <td><%= event.name %></td>
-              <td><%= event.data %></td>
-              <td><%= event.location %></td>
-              <td><%= event.describe %></td>
-              <td><%= link_to "编辑", edit_event_path(event) %></td>
-            </tr>
-        <% end %>
-      </table>
-    </div>
-  </div>
-</div>
+

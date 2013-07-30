@@ -1,9 +1,67 @@
+body{
+  font-size: 16px;
+  color: #333;
+}
+h1{font-size: 3.2em;}
+h2{font-size: 2.2em;}
+
+.button {
+  background: #31BB99;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 1.4em;
+  color:#ffffff;
+  &:hover {
+    text-decoration: none;
+    background: lighten(#31BB99, 10);
+    color: #fff;
+  }
+}
+
+$green:#31BB99;
+$light-gray:#eee;
+
+.row{
+  &:nth-child(odd){
+    background-color: $green;
+  }
+  &:nth-child(even){
+    background-color: $light-gray;
+  }
+  h1 {
+      font-size: 4.8em;
+      color: #ffffff;
+      margin-bottom: 20px;
+      line-height: 80px;
+    }
+  h2 {
+  font-size: 2.8em;
+  line-height: 1.5em;
+  font-weight: normal;
+  }
+  .row-header{
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+section{
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 940px;
+    margin: 0 auto;
+    
+}
+
 header {
   background-color: #444;
   overflow: hidden;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  height: 45px;
   z-index: 100;
   a {
     color: white;
@@ -26,17 +84,8 @@ header {
   }
 }
 
-.button {
-  background: #31BB99;
-  padding: 8px 10px;
-  border-radius: 5px;
-  font-size: 1.4em;
-  color:#ffffff;
-  &:hover {
-    text-decoration: none;
-    background: lighten(#31BB99, 10);
-    color: #fff;
-  }
+.main-content{
+  margin-top: 44px;
 }
 
 footer {
@@ -93,4 +142,8 @@ footer {
   .mailbox {
     background: image-url("mail.png") no-repeat 10px;
   }
+}
+
+@media screen and (max-width: 768px){
+  section{width: 100%;}
 }
