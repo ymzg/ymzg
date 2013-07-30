@@ -50,6 +50,9 @@ def story_2_header
 			content_tag(:p, "2012-06-20 | 19:57:35", :class=>"timestamp")
 		end
 end
+def story_2_hero
+	content_tag(:div, "", :class=>"hero-image", :style=>"background-image:url('/img/2-10.jpeg');")
+end
 
 def story_2_body
 	content_tag(:section, :class=>'story-body') do
@@ -61,6 +64,21 @@ def story_2_body
 	end
 
 end
+def story_2_gallery
+	content_tag(:div, :class=>"story-gallery")do
+		image_tag("/img/2-2.jpeg")+
+		image_tag("/img/2-3.jpeg")+
+		image_tag("/img/2-4.jpeg")+
+		image_tag("/img/2-5.jpeg")+
+		image_tag("/img/2-6.jpeg")+
+		image_tag("/img/2-7.jpeg")+
+		image_tag("/img/2-8.jpeg")+
+		image_tag("/img/2-9.jpeg")+
+		image_tag("/img/2-10.jpeg")+
+		image_tag("/img/2-11.jpeg")+
+		image_tag("/img/2-12.jpeg")
+	end
+end
 
 def story_3_header
 	content_tag(:section, :class=>"story-header")do
@@ -69,6 +87,9 @@ def story_3_header
 		end
 end
 
+def story_3_hero
+	content_tag(:div, "", :class=>"hero-image", :style=>"background-image:url('/img/3-7.jpeg');")
+end
 def story_3_body
 	content_tag(:section, :class=>'story-body') do
 		content_tag(:p, "偌大一个中国却盖不起一个破厕所”这是一个代课教师的无奈，也是我们的无奈。")+
@@ -77,6 +98,25 @@ def story_3_body
 		content_tag(:p,"“最后一次了”那集发那边的孩子们怎么办，所有更偏远地区的孩子们怎么办，他们没有好的书本、没有好的桌椅、没有好的教室、没有真正的老师、甚至连一个属于自己学校的厕所也没有。")
 	end
 
+end
+def story_3_gallery
+	content_tag(:div, :class=>"story-gallery")do
+		image_tag("/img/3-1.jpeg")+
+		image_tag("/img/3-2.jpeg")+
+		image_tag("/img/3-3.jpeg")+
+		image_tag("/img/3-4.jpeg")+
+		image_tag("/img/3-5.jpeg")+
+		image_tag("/img/3-6.jpeg")+
+		image_tag("/img/3-7.jpeg")+
+		image_tag("/img/3-8.jpeg")+
+		image_tag("/img/3-9.jpeg")+
+		image_tag("/img/3-10.jpeg")+
+		image_tag("/img/3-11.jpeg")+
+		image_tag("/img/3-12.jpeg")+
+		image_tag("/img/3-13.jpeg")+
+		image_tag("/img/3-14.jpeg")+
+		image_tag("/img/3-15.jpeg")
+	end
 end
 
 end
