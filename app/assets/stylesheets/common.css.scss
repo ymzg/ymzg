@@ -28,27 +28,10 @@ $light-gray:#eee;
   &:nth-child(even){
     background-color: $light-gray;
   }
-  h1 {
-      font-size: 4.8em;
-      color: #ffffff;
-      margin-bottom: 20px;
-      line-height: 80px;
-    }
-  h2 {
-  font-size: 2.8em;
-  line-height: 1.5em;
-  font-weight: normal;
-  }
-  .row-header{
-    background: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
 }
 
 section{
     padding: 50px 20px;
-    text-align: center;
     max-width: 940px;
     margin: 0 auto;
     

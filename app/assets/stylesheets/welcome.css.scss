@@ -1,4 +1,24 @@
+.welcome{
 
+.row{
+  h1 {
+    font-size: 4.8em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 80px;
+  }
+  h2 {
+    font-size: 2.8em;
+    line-height: 1.5em;
+    font-weight: normal;
+  }
+  .row-header{
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+}
+section{text-align: center;}
 section#main-title{
   .slogan {
     font-size: 24px;
@@ -89,4 +109,5 @@ section#stories{
   .event-wrapper, .map, ul{
     width: 90% !important;
   }
+}
 }
