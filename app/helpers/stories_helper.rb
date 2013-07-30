@@ -5,6 +5,7 @@ module StoriesHelper
 def story_1_header
 	content_tag(:section, :class=>"story-header")do
 			content_tag(:h1, "情牵映秀, 心系芦山")+
+			content_tag(:p, "2012-06-20 | 19:57:35", :class=>"timestamp")+
 			content_tag(:p, "我一直在想我应该写些什么来记录这次的活动，又应该怎么写才能把自己表达出自己的心情，让大家都感觉得到这次活动的意义，明白‘义梦中国’这个团队的努力奋斗的目标。")
 		end
 end
@@ -31,7 +32,8 @@ end
 
 def story_2_header
 	content_tag(:section, :class=>"story-header")do
-			content_tag(:h1, "探索之励志友爱读书会")
+			content_tag(:h1, "探索之励志友爱读书会")+
+			content_tag(:p, "2012-06-20 | 19:57:35", :class=>"timestamp")
 		end
 end
 
@@ -42,6 +44,23 @@ def story_2_body
 		content_tag(:p, "成立于2011年8月，是由大学生公益联盟和邻水义工共同发起创意的一个支教延伸公益项目。 目的是给乡村孩子们提供一个发现自我、认识自我并不断得到锻炼的成长平台。")+
 		content_tag(:p,"我们在陪同孩子能养成读书、爱书的习惯的同时，关注周末及节、假日山区留守儿童的课余生活。 利用周末的时间，通过读书会的形式，凝聚更多的乡村儿童参与相关活动。")+
 		content_tag(:p,"目前主要开展演讲、表演等多样的集体活动。")
+	end
+
+end
+
+def story_3_header
+	content_tag(:section, :class=>"story-header")do
+			content_tag(:h1, "偌大一个中国盖不起一个破厕所")+
+			content_tag(:p, "2012-06-20 | 19:57:35", :class=>"timestamp")
+		end
+end
+
+def story_3_body
+	content_tag(:section, :class=>'story-body') do
+		content_tag(:p, "偌大一个中国却盖不起一个破厕所”这是一个代课教师的无奈，也是我们的无奈。")+
+		content_tag(:p,"感谢四川灾区的人们，又给我们这里的孩子们捐来了这么多衣物，可是我们却一直没有帮他们送到孩子们的手中，找了很多理由和借口，说什么没空，学生们还在补课、梁老师的钱还没到帐……等，总之一直在拖天气变冷了也没有在乎，更不用说义教了。")+
+		content_tag(:p,"终于，2009年12月6日。我们又带着四川捐过来的物资踏上了义教这条短暂而又似乎没有尽头的路。但是，似乎这条路真的又快走到了尽头。说实在的，听到梁老师提起这可能是最后一次义教了，有一种莫名的痛上心头“就这样结束了？”“最后一次”这个突如其来的词语重重的击中了我的心。这让一向认为自己坚强的我也差点被这个突如其来的“最后一次”击得一败涂地。")+
+		content_tag(:p,"“最后一次了”那集发那边的孩子们怎么办，所有更偏远地区的孩子们怎么办，他们没有好的书本、没有好的桌椅、没有好的教室、没有真正的老师、甚至连一个属于自己学校的厕所也没有。")
 	end
 
 end

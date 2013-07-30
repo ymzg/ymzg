@@ -91,18 +91,7 @@ section#stories{
   position: relative;
   padding: 0;
   width: 100%;
-  text-align: left;
-  ul {
-    width: 80%;
-    margin: 0 auto;
-    li {
-      padding: 20px;
-      border-top: 1px solid #ccc;
-      img {
-        margin-right: 10px;
-      }
-    }
-  }
+
 }
 
 @media screen and (max-width: 768px){
