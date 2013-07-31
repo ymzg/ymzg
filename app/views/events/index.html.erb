@@ -1,0 +1,23 @@
+<div class="container events">
+  <% if flash[:notice] -%>
+      <div class='alert alert-success'><%=h flash[:notice] %> <span class='username'>  <%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
+  <% end -%>
+
+  <div class="span12">
+  <table class="table">
+    <tbody>
+    <% @events.each do |event| %>
+        <tr>
+          <td>
+            <%= link_to event.title, :controller => 'events',
+                        :action => 'show', :id => event %>
+          </td>
+          <td><%= event.event_date %></td>
+          <td><%= image_tag event.image.url(:thumb) %></td>
+          <td><%= event.location %></td>
+        </tr>
+    <% end -%>
+    </tbody>
+  </table>
+</div>
+</div>

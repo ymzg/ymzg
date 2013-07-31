@@ -1,0 +1,32 @@
+<div class="container">
+	<%if @event!=nil%>
+		<ul class="breadcrumb">
+		  <li><a href="/events" style="color: #0088cc;">活动列表</a> <span class="divider">/</span></li>
+		  <li class="active"><%= @event.title %></li>
+		</ul>
+
+		<div class="media well">
+		  <a class="pull-left" href="#">
+            <%= image_tag @event.image.url %>
+		  </a>
+		  <div class="">
+		    <h3 class=""><%=@event.title%> </h3>
+		    简介：
+		    <br>
+		    <%=@event.description%>
+		<hr/><!-- <input type="submit" class="btn pull-right" name="btnOK" value="我要参加" > -->
+		  </div>
+		</div>
+	
+	<%else%>
+	
+
+	<div class="alert alert-block alert-error fade in">
+            <h4 class="alert-heading">亲，该活动不存在！</h4>
+            <p>该活动有可能被删除，或者去火星了</p>
+            <p>
+              <a class="btn" href="/events">返回活动列表</a> 
+            </p>
+          </div>
+	<%end%>
+</div>

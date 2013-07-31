@@ -19,6 +19,7 @@
 
 ###Postgresql###
 
+
 Check your version of postgresql
   psql --version
 
@@ -36,4 +37,6 @@ Start your postgres server
 
 To stop your postgres server
         pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop
+
+
 

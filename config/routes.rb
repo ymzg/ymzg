@@ -1,67 +1,25 @@
 Ymzg::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-  get 'welcome' => 'welcome#index'
-  get 'admin' => 'welcome#admin'
-
-  get 'stories' => 'stories#index'
-  get 'stories/story1' => 'stories#story1'
-  get 'stories/story2' => 'stories#story2'
-  get 'stories/story3' => 'stories#story3'
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
 
   resources :events
 
+  get "stories" => "stories#index"
+  get 'stories/story1' => 'stories#story1'
+  get 'stories/story2' => 'stories#story2'
+  get 'stories/story3' => 'stories#story3'
+  resources :comments
 
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
 
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
+  get 'welcome' => 'welcome#index'
 
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
+  get '/auth/login' => 'auth#index'
+  get '/auth/logout' => 'auth#logout'
+  post '/auth/login' => 'auth#login'
 
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  get 'admin/events' => 'events#admin_events'
+  get 'admin/events/new' => 'events#new'
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
   root :to => 'welcome#index'
 
-  # See how all your routes lay out with "rake routes"
-
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
 end

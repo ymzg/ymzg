@@ -1,0 +1,36 @@
+<%= form_for(@event) do |f| %>
+    <% if @event.errors.any? %>
+        <div id="error_explanation">
+          <ul>
+            <% @event.errors.full_messages.each do |msg| %>
+                <li style="color: red;"><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div>
+      <%= f.label :title, "名称" %>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.label :location, "活动地点" %>
+      <%= f.text_field :location %>
+    </div>
+    <div>
+      <%= f.label :image, "图片" %>
+      <%= f.file_field  :image %>
+    </div>
+    <div>
+      <%= f.label :description, "内容" %>
+      <%= f.text_area :description %>
+    </div>
+    <div>
+      <%= f.label :event_date, "开始日期" %>
+
+      <%= f.date_select :event_date %>
+    </div>
+    <div class="actions">
+      <%= f.submit '保存' %>
+    </div>
+<% end %>

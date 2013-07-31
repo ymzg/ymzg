@@ -1,0 +1,20 @@
+
+<div class="login-form">
+  <% if flash[:error] -%>
+      <div class='alert alert-error'><%=h flash[:error] %></div>
+  <% end -%>
+  <%= form_for(@user, url: {controller:"auth",action: "login"}) do |f| %>
+      <div>
+        <label>用户名:</label>
+        <%= f.text_field :username %>
+      </div>
+      <div>
+        <label>密码:</label>
+        <%= f.password_field :password %>
+      </div>
+      <div>
+        <%= f.submit "登录"%>
+      </div>
+  <% end %>
+
+</div>
