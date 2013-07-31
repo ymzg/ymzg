@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function() {
 
+  
 $(function() {
     $('#slides').slidesjs({
         width: 940,
@@ -22,4 +24,24 @@ $(function() {
             active: false
         }
     });
+});
+
+$(".story-gallery > img").click(function(){
+	if ($(".overlay").length == 0){
+		$("body").addClass("active").prepend('<div class="overlay">overlay</div>');;
+		$(this).addClass("selected");
+	}
+	else if ($(".overlay").length > 0){
+		$("body").removeClass("active");
+		$(".overlay").remove();
+		$(this).removeClass("selected");
+	}
+  $(".overlay").click(function(){
+    $(this).remove();
+    $("body").removeClass("active");
+    $(".story-gallery > img").removeClass("selected");
+  });
+});
+
+
 });

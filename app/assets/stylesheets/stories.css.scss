@@ -14,8 +14,32 @@
 	text-align: center;
 	img{
 		width: 280px;
+		height: auto;
 		margin: 10px;
+		cursor: pointer;
+		border-radius: 10px;
 	}
+}
+
+&.active{
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0, .8);
+  }
+  .story-gallery img.selected{
+    position: fixed;
+    left: 50%;
+    width: 800px;
+    height: auto;
+    margin-left: -400px;
+    top: 100px;
+    z-index: 200;
+  }
 }
 
 @media screen and (max-width: 768px){
