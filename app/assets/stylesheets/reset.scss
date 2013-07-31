@@ -35,16 +35,9 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-a:focus {
-    outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-}
-
-a:hover,
-a:active {
-    outline: 0;
-    cursor: pointer;
+a, a:focus, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: #333;
 }
 
 sub,
@@ -93,16 +86,6 @@ body {
     background-color: #ffffff;
 }
 
-a {
-    color: #0088cc;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    color: #005580;
-    text-decoration: underline;
-}
 
 h1, h2, h3, h4, h5, h6{margin: 0; line-height: 1em; }
 ol,ul{list-style: none; margin: 0; padding: 0;}

@@ -1,18 +1,6 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.table a {
-  color: #333333;
-}
-
-.events a:hover {
-  color: #333333;
-}
-.admin-events {
-  a:hover {
-      color: red;
-  }
-}
 
 .title {
   float: left;
@@ -30,3 +18,19 @@
   margin: 10px 20px;
 }
 
+
+.login-form{
+    width: 400px;
+    height: auto;
+    margin: 20px auto 20px;
+    border: 1px Solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form form {
+    padding: 10px 83px;
+}
+
+.username {
+    color: black;
+}

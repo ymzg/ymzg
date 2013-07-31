@@ -6,7 +6,6 @@ body{
   color: #333;
 }
 
-
 h1{font-size: 3.2em;}
 h2{font-size: 2.2em;}
 
@@ -24,16 +23,33 @@ ul.article-list {
     }
 }
 
-.button {
-  background: #31BB99;
+table{
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button, a.button{
   padding: 8px 10px;
   border-radius: 5px;
   font-size: 1.4em;
-  color:#ffffff;
-  &:hover {
-    text-decoration: none;
-    background: lighten(#31BB99, 10);
+  display: inline-block;
+  text-decoration: none;
+  &.primary{
+    background: #31BB99;
+    color:#ffffff;
+    
+    &:hover {
+      background: lighten(#31BB99, 10);
+    }
+  }
+  &.secondary{
+    background-color: #6dbfe7;
+    font-size: 1em;
     color: #fff;
+    &:hover {
+      background: lighten(#6dbfe7, 10);
+    }
   }
 }
 
@@ -64,26 +80,24 @@ header {
   right: 0;
   height: 45px;
   z-index: 100;
-  a {
-    color: white;
-    &:hover {
-      color: #ffffff;
+}
+nav {
+    li {
+      float: left;
+      margin-left: 50px;
     }
-  }
-  nav {
-    ul {
-      li {
-        float: left;
-        margin-left: 50px;
-        a {
-          font-size: 19px;
-          line-height: 44px;
-          text-decoration: none;
-        }
+   a{
+      font-size: 19px;
+      line-height: 44px;
+      text-decoration: none;
+      color: #fff !important;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
       }
     }
-  }
 }
+
 
 .main-content{
   margin-top: 44px;
