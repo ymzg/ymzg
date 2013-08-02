@@ -98,7 +98,6 @@ nav {
     }
 }
 
-
 .main-content{
   margin-top: 44px;
 }
@@ -113,52 +112,42 @@ footer {
     li {
       float: left;
       padding: 10px 40px;
-      a {
+      div {
+        position: relative;
         width: 110px;
         height: 110px;
-        display: block;
-        font-size: 0;
-        line-height: 0;
+        a {
+          div{
+            position: absolute;
+            text-align: center;
+            img,p{
+              display: none;
+            }
+            &:hover{
+              background: #2FC7AF;
+              width: 150px;
+              height: 150px;
+              bottom: 30px;
+              right: 10px;
+              padding: 10px;
+              display: block;
+              img,p{
+                display: block;
+              }
+              img {
+                width: 150px;
+                height: 120px;
+              }
+            }
+          }
+          img{
+            padding-top: 20px;
+          }
+        }
       }
     }
-  }
-  .weixin {
-    background: image-url("weixin.png") no-repeat 10px;
-    &:hover{
-      .weixin-img {
-        display: block;
-      }
-    }
-    .weixin-img{
-      display:none; 
-      position: relative;
-      bottom:-5px;
-    }
-  }
-  .weibo {
-    background: image-url("weibo.png") no-repeat 10px;
-  }
-  .qq {
-    background: image-url("qq.png") no-repeat 10px;
-    &:hover {
-      .qqhao {
-        display: block;   
-      } 
-      text-decoration:none;
-    }
-    .qqhao {
-      display:none;
-      font-size:26px;
-      position:relative;
-      top:53px; 
-      right:48px;
-    }
-  }
-  .mailbox {
-    background: image-url("mail.png") no-repeat 10px;
   }
 }
-
 @media screen and (max-width: 768px){
   section{width: 100%;}
 }
