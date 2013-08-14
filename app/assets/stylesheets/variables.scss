@@ -1,6 +1,11 @@
-$green:#31BB99;
+$green: #31BB99;
+$light-green: lighten(#31BB99, 40);
 $blue: #60bae8;
-$light-gray:#ddd;
+$red: #bd1903;
+$pink: #faf2f2;
+
+$gray: #d2d2d2;
+$light-gray:#eee;
 
 @mixin box-shadow-standard{
 	box-shadow:0 1px 2px 0 rgba(0,0,0, .4);

@@ -1,8 +1,8 @@
 <% content_for :body_class, "events" %>
 <div class="container">
-  <%= render :partial => 'logout' %>
+   <%= link_to '注销', auth_logout_path, :id=>'logout'%>
   <% if flash[:notice] -%>
-      <div class='alert alert-success'><%=h flash[:notice] %> <span class='username'>  <%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
+      <div class='alert success'><%=h flash[:notice] %><%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
   <% end -%>
     <section>
 
@@ -13,9 +13,11 @@
       <div class="events-container">
         <% @events.each do |event| %>
           <div class="event">
-            <%= image_tag event.image.url(:thumb) %>
-            <br/>
-            <h2 id="event-title"><%= event.title %></h2>
+            <%= image_tag event.image.url(:thumb), :id=>"event-thumb-image"%>
+    
+            <h2 id="event-title">
+            <%= link_to event.title, :controller => 'events', :action => 'show', :id => event %>
+            </h2>
             <span id="event-location"><%= event.location %></span> | <span id="event-time"><%= event.event_date %></span>
             <div id="event-description">
             <%= event.description %>

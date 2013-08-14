@@ -1,17 +1,9 @@
-// Place all the styles related to the events controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.create-event, .edit-event{
+  input[type=text], textarea{width: 400px}
+}
 .events{
   .title {
     float: left;
-  }
-
-  #logout {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: #fff;
-    z-index: 100;
   }
 
   .add-new{
@@ -21,20 +13,26 @@
   .events-container{
     clear: both;
     text-align: center;
+    
   }
   .event{
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px;
-    width: 250px;
+    padding: 20px 0;
+    width: 100%;
     text-align: left;
+    overflow: hidden;
     h2{font-size: 1.2em; margin: 5px 0;}
-    img{
+    img#event-thumb-image{
       border: 5px solid #fff;
-      @include box-shadow-standard
+      float: left;
+      width: 200px;
+      margin: 0 20px;
+      @include box-shadow-standard;
     }
     #event-description{margin: 10px 0;}
   }
+  .event-full-image img{max-width: 500px;}
+
+
   .login-form{
       width: 400px;
       height: auto;
@@ -47,7 +45,13 @@
       padding: 10px 83px;
   }
 
-  .username {
-      color: black;
+    #logout {
+    position: fixed;
+    right: 50px;
+    top: 12px;
+    z-index: 100;
+    font-size: 1.5em;
+    color: #fff;
   }
+
 }

@@ -7,7 +7,7 @@ body{
   background-color: #ffffff;
 }
 
-h1{font-size: 2.2em;}
+h1{font-size: 2.2em; margin-bottom: .5em;}
 h2{font-size: 2em;}
 
 ul.article-list {
@@ -35,15 +35,17 @@ a{
   }
 }
 form{margin: 20px;}
+.form-field{padding: 5px 0;}
 label{font-weight: bold; font-size: 1.2em;}
 input{margin: 5px; font-size: 1em;}
-input[type=text], textarea{
+input[type=text], textarea, input[type=password], select{
   @include border-radius(4px);
-  border: 1px solid $light-gray;
+  border: 1px solid $gray;
   padding: 5px 10px;
-  width: 400px;
+  width: 200px;
 }
 textarea{height: 200px;}
+select{width: auto;}
 
 .button, a.button{
   padding: 8px 10px;
@@ -69,6 +71,23 @@ textarea{height: 200px;}
   }
 }
 
+.alert{
+
+  margin: 10px 0;
+  padding: 10px 20px;
+  @include border-radius(4px);
+  &.error{
+    border: 1px solid $red;
+    background-color: $pink;
+    color: $red;
+  }
+  &.success{
+    border: 1px solid $green;
+    background-color: $light-green;
+    color: $green;
+  }
+}
+//Layout related
 
 .row{
   &:nth-child(odd){

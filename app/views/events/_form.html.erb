@@ -9,31 +9,32 @@
         </div>
     <% end %>
 
-    <div>
+    <div class="form-field">
       <%= f.label :title, "名称" %>
       <br/>
       <%= f.text_field :title %>
     </div>
-    <div>
+    <div class="form-field">
       <%= f.label :location, "活动地点" %>
       <br/>
       <%= f.text_field :location %>
     </div>
-    <div>
-      <%= f.label :image, "图片" %>
-      <br/>
-      <%= f.file_field  :image %>
-    </div>
-    <div>
-      <%= f.label :description, "内容" %>
-      <br/>
-      <%= f.text_area :description %>
-    </div>
-    <div>
+      <div class="form-field">
       <%= f.label :event_date, "开始日期" %>
       <br/>
       <%= f.date_select :event_date %>
     </div>
+    <div class="form-field">
+      <%= f.label :image, "图片" %>
+      <br/>
+      <%= f.file_field  :image %>
+    </div>
+    <div class="form-field">
+      <%= f.label :description, "内容" %>
+      <br/>
+      <%= f.text_area :description %>
+    </div>
+  
     <div class="actions">
       <%= f.submit '保存', :class=>"primary button" %>
     </div>

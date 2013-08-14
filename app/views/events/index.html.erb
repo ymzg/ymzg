@@ -1,23 +1,26 @@
+<% content_for :body_class, "events" %>
 <div class="container events">
   <% if flash[:notice] -%>
       <div class='alert alert-success'><%=h flash[:notice] %> <span class='username'>  <%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
   <% end -%>
+</div>
 
-  <div class="span12">
-  <table class="table">
-    <tbody>
+  <section>
+  <h1 class="title">活动列表</h1>
+  <div class="events-container">
     <% @events.each do |event| %>
-        <tr>
-          <td>
-            <%= link_to event.title, :controller => 'events',
-                        :action => 'show', :id => event %>
-          </td>
-          <td><%= event.event_date %></td>
-          <td><%= image_tag event.image.url(:thumb) %></td>
-          <td><%= event.location %></td>
-        </tr>
-    <% end -%>
-    </tbody>
-  </table>
-</div>
-</div>
+
+      <div class="event">
+        <%= image_tag event.image.url(:thumb),:id=>"event-thumb-image" %>
+        <br/>
+        <h2 id="event-title">
+          <%= link_to event.title, :controller => 'events', :action => 'show', :id => event %></h2>
+        <span id="event-location"><%= event.location %></span> | <span id="event-time"><%= event.event_date %></span>
+        <div id="event-description">
+        <%= event.description %>
+        </div>
+      </div>
+    <%end%>
+  </div>
+
+</section>
