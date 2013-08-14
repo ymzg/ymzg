@@ -1,36 +1,53 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.events{
+  .title {
+    float: left;
+  }
 
-.title {
-  float: left;
-}
+  #logout {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    z-index: 100;
+  }
 
-.btn-logout {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
+  .add-new{
+      float: right;
+    }
 
-.btn-add {
-  display: inline-block;
-  line-height: 40px;
-  margin: 10px 20px;
-}
+  .events-container{
+    clear: both;
+    text-align: center;
+  }
+  .event{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    width: 250px;
+    text-align: left;
+    h2{font-size: 1.2em; margin: 5px 0;}
+    img{
+      border: 5px solid #fff;
+      @include box-shadow-standard
+    }
+    #event-description{margin: 10px 0;}
+  }
+  .login-form{
+      width: 400px;
+      height: auto;
+      margin: 20px auto 20px;
+      border: 1px Solid #ddd;
+      border-radius: 5px;
+  }
 
+  .login-form form {
+      padding: 10px 83px;
+  }
 
-.login-form{
-    width: 400px;
-    height: auto;
-    margin: 20px auto 20px;
-    border: 1px Solid #ddd;
-    border-radius: 5px;
-}
-
-.login-form form {
-    padding: 10px 83px;
-}
-
-.username {
-    color: black;
+  .username {
+      color: black;
+  }
 }

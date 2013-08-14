@@ -1,36 +1,31 @@
+<% content_for :body_class, "events" %>
 <div class="container">
   <%= render :partial => 'logout' %>
   <% if flash[:notice] -%>
       <div class='alert alert-success'><%=h flash[:notice] %> <span class='username'>  <%=session[:username] %> ,  </span> welcome back~~~ yahoo~ >_< ~~</div>
   <% end -%>
-  <div class="row">
-    <div class="span12">
-      <h3 class="title">活动列表</h3>
-      <div class="btn-add">
-        <%= link_to '新增', admin_events_new_path, :class => 'btn btn-small'%>
-      </div>
-      <table class="table table-hover admin-events">
-        <tr>
-          <th>活动日期</th>
-          <th>活动名称</th>
-          <th>活动地点</th>
-          <th>图片</th>
-          <th>活动描述</th>
-          <th></th>
-        </tr>
-        <% @events.each do |event| %>
-            <tr>
-              <td><%= event.event_date %></td>
-              <td><%= event.title %></td>
-              <td><%= event.location %></td>
-              <td><%= image_tag event.image.url(:thumb) %></td>
-              <td><%= event.description %></td>
-              <td> <%= link_to '修改',edit_event_path(event) , :class => 'btn btn-small'%></td>
-              <td> <%= link_to '删除',event_path(event) , method: :delete, data:{ confirm:'删除活动之后将无法恢复，你确认要删除吗？'}, :class => 'btn btn-small'%></td>
+    <section>
 
-            </tr>
-        <% end %>
-      </table>
-    </div>
-  </div>
+      <h1 class="title">活动列表</h1>
+  
+      <%= link_to '新增', admin_events_new_path, :class => 'add-new primary button'%>
+
+      <div class="events-container">
+        <% @events.each do |event| %>
+          <div class="event">
+            <%= image_tag event.image.url(:thumb) %>
+            <br/>
+            <h2 id="event-title"><%= event.title %></h2>
+            <span id="event-location"><%= event.location %></span> | <span id="event-time"><%= event.event_date %></span>
+            <div id="event-description">
+            <%= event.description %>
+            </div>
+            <%= link_to '修改',edit_event_path(event) , :class => 'secondary button'%>
+            <%= link_to '删除',event_path(event) , method: :delete, data:{ confirm:'删除活动之后将无法恢复，你确认要删除吗？'}, :class => 'secondary button'%>
+          </div>
+        <%end%>
+      </div>
+
+    </section>
+
 </div>
