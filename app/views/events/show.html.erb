@@ -4,8 +4,12 @@
         <div class="event">
     		<h1 class="event-title"><%=@event.title%></h1>
     		<span id="event-location"><%= @event.location %></span> | <span id="event-time"><%= @event.event_date %></span>
+          <% if @event.event_date >= Date.current() %>
             <%=link_to "现在报名",@event.event_url, :class=>"secondary button", :target => '_blank'%>
-    	    <br/>
+    	   <% else %>
+              <span class=""> 活动已过期</span>
+           <% end %>
+    	      <br/>
            <%= image_tag @event.image.url, :id=>"event-full-image" %>
 
 
