@@ -7,17 +7,21 @@
 	background-size: cover;
 	background-position: center, center;
 }
-
+.story-header, .story-body{padding: 50px 20px 10px;}
 .story-gallery{
 	width: 940px;
 	margin: 0 auto;
+  padding-bottom: 20px;
 	text-align: center;
+
 	img{
-		width: 280px;
+		width: 250px;
 		height: auto;
 		margin: 10px;
 		cursor: pointer;
-		border-radius: 10px;
+		border: 5px solid #fff;
+    vertical-align: top;
+    @include box-shadow-standard;
 	}
 }
 

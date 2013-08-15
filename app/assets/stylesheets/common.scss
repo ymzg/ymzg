@@ -8,8 +8,8 @@ body{
 }
 
 h1{font-size: 2.2em; margin-bottom: .5em;}
-h2{font-size: 2em;}
-
+h2{font-size: 2em; margin-bottom: .5em;}
+p{margin-bottom: 1.5em;}
 ul.article-list {
     width: 80%;
     margin: 0 auto;
@@ -115,6 +115,7 @@ header {
   right: 0;
   height: 45px;
   z-index: 100;
+  @include box-shadow-standard;
 }
 nav {
     li {
@@ -135,10 +136,16 @@ nav {
 
 .main-content{
   margin-top: 44px;
+  min-height: 100%;
+  margin-bottom: -140px;
+  &:after {
+  content: "";
+  display: block;
+  height: 140px;
+  }
 }
 
 footer {
-  clear: both;
   height: 140px;
   background: #2FC7AF;
   ul {

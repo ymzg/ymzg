@@ -1,9 +1,9 @@
 <%= form_for(@event) do |f| %>
     <% if @event.errors.any? %>
-        <div id="error_explanation">
+        <div class='alert error'>
           <ul>
             <% @event.errors.full_messages.each do |msg| %>
-                <li style="color: red;"><%= msg %></li>
+                <li><%= msg %></li>
             <% end %>
           </ul>
         </div>
