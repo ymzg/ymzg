@@ -27,7 +27,7 @@ end
   end
 
   def create
-    @event = Event.new(params.require(:event).permit(:title, :description, :image, :location, :event_date))
+    @event = Event.new(params.require(:event).permit(:title, :description, :image, :location, :event_date, :event_url))
     if @event.save
       redirect_to admin_events_path
     else

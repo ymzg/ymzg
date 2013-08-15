@@ -34,6 +34,11 @@
       <br/>
       <%= f.text_area :description %>
     </div>
+    <div class="form-field">
+      <%= f.label :event_url, "报名地址" %>
+      <br/>
+      <%= f.text_field :event_url %>
+    </div>
   
     <div class="actions">
       <%= f.submit '保存', :class=>"primary button" %>
