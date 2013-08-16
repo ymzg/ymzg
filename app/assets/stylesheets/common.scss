@@ -87,6 +87,23 @@ select{width: auto;}
     color: $green;
   }
 }
+//Content related
+
+.article-list li:before{
+  content:"";
+  width: 60px;
+  height: 60px;
+  @include border-radius(50%);
+  display: inline-block;
+  background-image:url("/img/thumb/pencil.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  background-color: $blue;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 //Layout related
 
 .row{
@@ -146,50 +163,74 @@ nav {
 }
 
 footer {
-  height: 140px;
-  background: #2FC7AF;
+  min-height: 120px;
+  background: $green;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
   ul {
-    width: 800px;
+    max-width: 960px;
     margin: 0 auto;
-    li {
-      float: left;
-      padding: 10px 40px;
-      div {
-        position: relative;
-        width: 110px;
-        height: 110px;
-        a {
-          div{
-            position: absolute;
-            text-align: center;
-            img,p{
-              display: none;
-            }
-            &:hover{
-              background: #2FC7AF;
-              width: 150px;
-              height: 150px;
-              bottom: 30px;
-              right: 10px;
-              padding: 10px;
-              display: block;
-              img,p{
-                display: block;
-              }
-              img {
-                width: 150px;
-                height: 120px;
-              }
-            }
-          }
-          img{
-            padding-top: 20px;
-          }
-        }
-      }
+    
     }
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 60px;
+    a {
+      position: relative;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+      color: #fff;
+      font-size: 1.4em;
+      height: 60px;
+      width: 60px;
+      display: block;
+      text-align: left;
+      background-color: darken($green, 5);
+      @include border-radius(50%);
+      &:hover{
+        text-decoration: none;
+        span{display:block;}
+       
+      }
+    } 
+  
+    span{
+      position: absolute;
+      display: none;
+      top: 50px;
+      left: -50px;
+      width: 160px;
+      padding: 5px 10px;
+      text-align: center;
+      font-size: 14px;
+      background-color: darken($green,5);
+
+    }
+
+  }
+  .copyright{
+      padding: 20px 0;
+      background-color: darken($green, 10);
+      a{color: #fff;}
+    }
+  #weixin{
+    background-image: url("/img/thumb/weixin.png");
+  
+  }
+  #qq{
+    background-image: url("/img/thumb/qq.png");
+  }
+  #weibo{
+    background-image: url("/img/thumb/weibo.png");   
+  }
+  #mail{
+    background-image: url("/img/thumb/mailbox.png");
   }
 }
+
 @media screen and (max-width: 768px){
   section{width: 100%;}
 }
