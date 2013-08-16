@@ -31,7 +31,10 @@
     #event-description{margin: 10px 0;}
   }
   
-  .event-full-image img{max-width: 500px;}
+  .event-full-image{
+    max-width: 500px;
+    margin:10px 0;
+  }
 
 
   .login-form{
