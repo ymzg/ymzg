@@ -20,6 +20,14 @@ $(function() {
     $('#slides').slidesjs({
         width: 940,
         height: 350,
+        play: {
+            interval: 4000,
+            // [number] Time spent on each slide in milliseconds.
+            auto: true,
+            // [boolean] Start playing the slideshow on load.
+            pauseOnHover: true,
+            // [boolean] pause a playing slideshow on hover
+        },
         pagination: {
             active: false
         }
