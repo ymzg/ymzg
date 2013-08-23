@@ -43,7 +43,20 @@ section#carousel{
     .slidesjs-previous, .slidesjs-next {
       position: absolute;
       top: 150px;
-      z-index: 100;
+      z-index: 50;
+      background: rgba(255,255,255, .7);
+      @include border-radius(50%);
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      color: #444;
+      font-size: 60px;
+      font-weight: bold;
+      font-family: "Comic Sans MS";
+      &:hover {
+        text-decoration: none;
+      }
+
     }
     .slidesjs-previous {
       left: 10px;
