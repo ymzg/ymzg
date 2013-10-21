@@ -25,6 +25,13 @@ section#main-title{
     span:first-child {
       margin-right: 40px;
     }
+    @media (max-width: 600px) {
+      span, span:first-child{
+        margin-right: 0px;
+        display: block;
+        line-height: 35px;
+      }
+    }
   }
   
 }
