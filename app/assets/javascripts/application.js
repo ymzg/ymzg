@@ -19,7 +19,7 @@ $(document).ready(function() {
 $(function() {
     $('#slides').slidesjs({
         width: 940,
-        height: 390,
+        height: 350,
         play: {
             interval: 4000,
             // [number] Time spent on each slide in milliseconds.
