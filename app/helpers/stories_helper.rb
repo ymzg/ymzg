@@ -91,7 +91,8 @@ end
 
 def story_2_header
 	content_tag(:section, :class=>"story-header")do
-			content_tag(:h1, "大坪子校点　我们的希望")
+			content_tag(:h1, "大坪子校点　我们的希望")+
+		    content_tag(:p, "2013-05-27 | 19:57:35", :class=>"timestamp")
 		end
 end
 def story_2_hero
@@ -170,12 +171,12 @@ end
 def story_3_header
 	content_tag(:section, :class=>"story-header")do
 			content_tag(:h1, "义梦中国·情系雅安")+
-			content_tag(:p, "2013年七月二十一号", :class=>"timestamp")
+			content_tag(:p, "2013-05-27 | 19:57:35", :class=>"timestamp")
 		end
 end
 
 def story_3_hero
-	content_tag(:div, "", :class=>"hero-image", :style=>"background-image:url('/img/stories/3-1.jpg');")
+	content_tag(:div, "", :class=>"hero-image", :style=>"background-image:url('/img/stories/background-yaan.jpg');")
 end
 def story_3_body
 	content_tag(:section, :class=>'story-body') do
