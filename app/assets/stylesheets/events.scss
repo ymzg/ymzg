@@ -28,7 +28,11 @@
       margin: 0 20px;
       @include box-shadow-standard;
     }
-    #event-description{margin: 10px 0;}
+    #event-description{
+      margin: 10px 0;
+      overflow: auto;
+      height: 100px;
+    }
   }
   
   .event-full-image{
