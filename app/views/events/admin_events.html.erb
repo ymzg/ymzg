@@ -26,6 +26,7 @@
             <%= link_to '删除',event_path(event) , method: :delete, data:{ confirm:'删除活动之后将无法恢复，你确认要删除吗？'}, :class => 'secondary button'%>
           </div>
         <%end%>
+        <%= will_paginate @events %>
       </div>
 
     </section>

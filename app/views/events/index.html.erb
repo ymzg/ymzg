@@ -8,7 +8,6 @@
   <section>
   <h1 class="title">活动列表</h1>
   <div class="events-container">
-  <%= will_paginate @events %>
     <% @events.each do |event| %>
 
       <div class="event">
@@ -22,6 +21,7 @@
         </div>
       </div>
     <%end%>
+    <%= will_paginate @events %>
   </div>
 
 </section>

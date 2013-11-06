@@ -19,7 +19,7 @@ def ding
 end
 
   def index
-    @events = Event.paginate(:page => params[:page], :per_page => 3)
+    @events = Event.paginate(:page => params[:page])
   end
 
   def new
@@ -37,7 +37,7 @@ end
 
 
   def admin_events
-    @events = Event.all()
+    @events = Event.paginate(:page => params[:page])
   end
 
   def show

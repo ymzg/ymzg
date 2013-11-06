@@ -9,5 +9,6 @@ class Event < ActiveRecord::Base
     find(:all, :order => "event_date desc")
   }
 
+  self.per_page = 3
 
 end
