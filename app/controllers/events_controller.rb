@@ -19,7 +19,11 @@ def ding
 end
 
   def index
+    if session[:username].nil?
     @events = Event.paginate(:page => params[:page])
+    else
+    redirect_to "/admin/events"
+    end
   end
 
   def new
