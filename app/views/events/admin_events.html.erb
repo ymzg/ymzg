@@ -13,7 +13,7 @@
       <div class="events-container">
         <% @events.each do |event| %>
           <div class="event">
-            <%= image_tag event.image.url(:thumb), :id=>"event-thumb-image"%>
+            <%= link_to image_tag(event.image.url(:thumb), :id=>"event-thumb-image"),  {:controller => 'events', :action => 'show', :id => event}%>
     
             <h2 id="event-title">
             <%= link_to event.title, :controller => 'events', :action => 'show', :id => event %>
