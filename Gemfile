@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 1.2'
 #A simple fast web server
 gem "puma"
 
+gem 'will_paginate', '~> 3.0'
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
