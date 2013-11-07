@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/twer/OpenSourceProject/ymzg/app/controllers/auth_controller.rb": [
+      "/Users/twer/Documents/ruby/ymzg/app/controllers/auth_controller.rb": [
         1,
         null,
         1,
@@ -40,7 +40,7 @@
         null,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/app/controllers/application_controller.rb": [
+      "/Users/twer/Documents/ruby/ymzg/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -51,7 +51,7 @@
         null,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/spec/controllers/events_controller_spec.rb": [
+      "/Users/twer/Documents/ruby/ymzg/spec/controllers/events_controller_spec.rb": [
         1,
         null,
         1,
@@ -102,7 +102,7 @@
         null,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/app/controllers/events_controller.rb": [
+      "/Users/twer/Documents/ruby/ymzg/app/controllers/events_controller.rb": [
         null,
         1,
         1,
@@ -182,7 +182,7 @@
         null,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/spec/controllers/stories_controller_spec.rb": [
+      "/Users/twer/Documents/ruby/ymzg/spec/controllers/stories_controller_spec.rb": [
         1,
         null,
         1,
@@ -196,7 +196,7 @@
         null,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/app/controllers/stories_controller.rb": [
+      "/Users/twer/Documents/ruby/ymzg/app/controllers/stories_controller.rb": [
         1,
         null,
         1,
@@ -204,24 +204,7 @@
         null,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/spec/helpers/auth_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/twer/OpenSourceProject/ymzg/spec/helpers/events_helper_spec.rb": [
+      "/Users/twer/Documents/ruby/ymzg/spec/helpers/auth_helper_spec.rb": [
         1,
         null,
         null,
@@ -238,7 +221,7 @@
         1,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/spec/helpers/stories_helper_spec.rb": [
+      "/Users/twer/Documents/ruby/ymzg/spec/helpers/events_helper_spec.rb": [
         1,
         null,
         null,
@@ -255,19 +238,36 @@
         1,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/spec/models/user_spec.rb": [
+      "/Users/twer/Documents/ruby/ymzg/spec/helpers/stories_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/twer/Documents/ruby/ymzg/spec/models/user_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/app/models/user.rb": [
+      "/Users/twer/Documents/ruby/ymzg/app/models/user.rb": [
         1,
         1,
         null
       ],
-      "/Users/twer/OpenSourceProject/ymzg/app/models/event.rb": [
+      "/Users/twer/Documents/ruby/ymzg/app/models/event.rb": [
         null,
         1,
         1,
@@ -284,6 +284,6 @@
         null
       ]
     },
-    "timestamp": 1383826106
+    "timestamp": 1383827665
   }
 }
