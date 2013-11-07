@@ -3,10 +3,10 @@ require 'spec_helper'
 describe EventsController do
 
   before(:each) do
-    @event1 = Event.create({:title => "name", :description => "description", :event_date => Time.new() } )
+    @event1 = Event.create({:title => "name",:location => "Chengdu", :description => "description", :event_url => "http://balabala.com", :event_date => Time.new() } )
     @event1.save
-    @event2 = Event.create!
-    mock(session[:username] = "mock")
+    @event2 = Event.create({:title => "name2",:location => "Chengdu2", :description => "description2", :event_url => "http://balabala.com", :event_date => Time.new() } )
+    double(session[:username] = "mock")
   end
 
 
@@ -22,6 +22,7 @@ describe EventsController do
       events = assigns(:events)
       expect(events).to match_array([@event1, @event2])
       expect(events.first.title).to eq "name"
+      expect(events.second.title).to eq "name2"
     end
 
     it "should render admin events" do
