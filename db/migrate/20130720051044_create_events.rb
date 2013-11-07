@@ -12,7 +12,8 @@ class CreateEvents < ActiveRecord::Migration
       t.date     "event_date"
       t.datetime "created_at"
       t.datetime "updated_at"
-      t.string   "event_url
+      t.string   "event_url"
+
     end
   end
 end
