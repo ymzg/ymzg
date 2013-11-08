@@ -43,7 +43,25 @@ describe EventsController do
       delete :destroy, :id => @event1
       expect(response).to redirect_to admin_events_path
     end
-
   end
+
+  describe "GET #index" do
+    it "should view all the events for normal user" do
+      double(session[:username] = nil)
+      get :index
+      expect(response).to render_template('index')
+      events =  assigns(:events)
+      expect(events).to match_array([@event1, @event2])
+      expect(events.first.title).to eq "name"
+      expect(events.second.title).to eq "name2"
+    end
+
+    it "should redirect to admin_event if admin logged in" do
+      get :index
+      expect(response).to redirect_to admin_events_path
+    end
+  end
+
+
 
 end

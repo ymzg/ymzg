@@ -3,26 +3,11 @@ class EventsController < AuthController
   before_action :set_event, only: [ :edit, :update]
   before_action :is_logined, only: [ :edit, :update, :new, :create, :destroy, :admin_events]
 
-def ding
-
-    @event=Event.find_by_id(params[:id])
-    if @event==nil
-    	#flash[:notice] = ""
-    	render :text => "没有这个活动"
-    else
-      @event.ding_count=@event.ding_count+1
-      @event.save
-      redirect_to event_path @event
-    end
-  
-  
-end
-
   def index
     if session[:username].nil?
     @events = Event.paginate(:page => params[:page])
     else
-    redirect_to "/admin/events"
+    redirect_to admin_events_path
     end
   end
 
