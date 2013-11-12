@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class EventsController < AuthController
   before_action :set_event, only: [ :edit, :update]
-  before_action :is_logined, only: [ :edit, :update, :new, :create, :destroy, :admin_events]
+  before_action :is_logged, only: [ :edit, :update, :new, :create, :destroy, :admin_events]
 
   def index
     if session[:username].nil?

@@ -19,7 +19,7 @@ class AuthController < ApplicationController
     end
   end
 
-  def is_logined
+  def is_logged
 
     #use this method to validate if user logined
     #if user logined will return logined username

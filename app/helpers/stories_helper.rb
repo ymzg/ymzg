@@ -212,7 +212,9 @@ def story_3_gallery
 		image_tag("/img/stories/3-6.jpg")+
 		image_tag("/img/stories/3-7.jpg")+
 		image_tag("/img/stories/3-8.jpg")+
-		image_tag("/img/stories/3-9.jpg")
+		image_tag("/img/stories/3-9.jpg")+
+		image_tag("/img/stories/3-10.jpg")+
+		image_tag("/img/stories/3-11.jpg")
 	end
 end
 
