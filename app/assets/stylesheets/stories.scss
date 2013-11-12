@@ -8,6 +8,14 @@
 	background-position: center, center;
 }
 .story-header, .story-body{padding: 50px 20px 10px;}
+
+.story-body {
+  a {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
 .story-gallery{
 	width: 940px;
 	margin: 0 auto;

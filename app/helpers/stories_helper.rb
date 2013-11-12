@@ -146,7 +146,7 @@ def story_3_header
 end
 
 def story_3_hero
-	content_tag(:div, "", :class=>"hero-image", :style=>"background-image:url('/img/stories/background-yaan.jpg');")
+	content_tag(:div, "", :class=>"hero-image", :style=>"background-image:url('/img/story3/background-yaan.jpg');")
 end
 def story_3_body
 	content_tag(:section, :class=>'story-body') do
@@ -199,17 +199,17 @@ def story_3_body
 end
 def story_3_gallery
 	content_tag(:div, :class=>"story-gallery")do
-		image_tag("/img/stories/3-1.jpg")+
-		image_tag("/img/stories/3-2.jpg")+
-		image_tag("/img/stories/3-3.jpg")+
-		image_tag("/img/stories/3-4.jpg")+
-		image_tag("/img/stories/3-5.jpg")+
-		image_tag("/img/stories/3-6.jpg")+
-		image_tag("/img/stories/3-7.jpg")+
-		image_tag("/img/stories/3-8.jpg")+
-		image_tag("/img/stories/3-9.jpg")+
-		image_tag("/img/stories/3-10.jpg")+
-		image_tag("/img/stories/3-11.jpg")
+		image_tag("/img/story3/3-1.jpg")+
+		image_tag("/img/story3/3-2.jpg")+
+		image_tag("/img/story3/3-3.jpg")+
+		image_tag("/img/story3/3-4.jpg")+
+		image_tag("/img/story3/3-5.jpg")+
+		image_tag("/img/story3/3-6.jpg")+
+		image_tag("/img/story3/3-7.jpg")+
+		image_tag("/img/story3/3-8.jpg")+
+		image_tag("/img/story3/3-9.jpg")+
+		image_tag("/img/story3/3-10.jpg")+
+		image_tag("/img/story3/3-11.jpg")
 	end
 end
 
