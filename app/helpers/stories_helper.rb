@@ -11,7 +11,7 @@ module StoriesHelper
   end
 
   def story_1_hero
-    content_tag(:div, "", :class => "hero-image", :style => "background-image:url('/img/yingxiutrip7.jpg');")
+    content_tag(:div, "", :class => "hero-image", :style => "background-image:url('/img/story-one/1-background.jpg');")
   end
 
   def story_1_body
@@ -65,12 +65,12 @@ module StoriesHelper
 
   def story_1_gallery
     content_tag(:div, :class => "story-gallery") do
-      image_tag("/img/yingxiutrip1.jpg")+
-          image_tag("/img/yingxiutrip2.jpg")+
-          image_tag("/img/yingxiutrip3.jpg")+
-          image_tag("/img/yingxiutrip4.jpg")+
-          image_tag("/img/yingxiutrip6.jpg")+
-          image_tag("/img/yingxiutrip5.jpg")
+      image_tag("/img/story-one/1-1.jpg")+
+      image_tag("/img/story-one/1-2.jpg")+
+      image_tag("/img/story-one/1-3.jpg")+
+      image_tag("/img/story-one/1-4.jpg")+
+      image_tag("/img/story-one/1-5.jpg")+
+      image_tag("/img/story-one/1-6.jpg")
 
     end
   end
@@ -83,7 +83,7 @@ module StoriesHelper
   end
 
   def story_2_hero
-    content_tag(:div, "", :class => "hero-image", :style => "background-image:url('/img/story2/2-background.jpg');")
+    content_tag(:div, "", :class => "hero-image", :style => "background-image:url('/img/story-two/2-background.jpg');")
   end
 
   def story_2_body
@@ -128,13 +128,13 @@ module StoriesHelper
 
   def story_2_gallery
     content_tag(:div, :class => "story-gallery") do
-      image_tag("/img/story2/2-1.jpg")+
-          image_tag("/img/story2/2-2.jpg")+
-          image_tag("/img/story2/2-3.jpg")+
-          image_tag("/img/story2/2-4.jpg")+
-          image_tag("/img/story2/2-5.jpg")+
-          image_tag("/img/story2/2-6.jpg")+
-          image_tag("/img/story2/2-7.jpg")
+      image_tag("/img/story-two/2-1.jpg")+
+          image_tag("/img/story-two/2-2.jpg")+
+          image_tag("/img/story-two/2-3.jpg")+
+          image_tag("/img/story-two/2-4.jpg")+
+          image_tag("/img/story-two/2-5.jpg")+
+          image_tag("/img/story-two/2-6.jpg")+
+          image_tag("/img/story-two/2-7.jpg")
 
     end
   end
@@ -147,7 +147,7 @@ module StoriesHelper
   end
 
   def story_3_hero
-    content_tag(:div, "", :class => "hero-image", :style => "background-image:url('/img/story3/background-yaan.jpg');")
+    content_tag(:div, "", :class => "hero-image", :style => "background-image:url('/img/story-three/3-background-yaan.jpg');")
   end
 
   def story_3_body
@@ -202,15 +202,15 @@ module StoriesHelper
 
   def story_3_gallery
     content_tag(:div, :class => "story-gallery") do
-      image_tag("/img/story3/3-1.jpg")+
-          image_tag("/img/story3/3-2.jpg")+
-          image_tag("/img/story3/3-3.jpg")+
-          image_tag("/img/story3/3-4.jpg")+
-          image_tag("/img/story3/3-5.jpg")+
-          image_tag("/img/story3/3-6.jpg")+
-          image_tag("/img/story3/3-7.jpg")+
-          image_tag("/img/story3/3-8.jpg")+
-          image_tag("/img/story3/3-9.jpg")
+      image_tag("/img/story-three/3-1.jpg")+
+      image_tag("/img/story-three/3-2.jpg")+
+      image_tag("/img/story-three/3-3.jpg")+
+      image_tag("/img/story-three/3-4.jpg")+
+      image_tag("/img/story-three/3-5.jpg")+
+      image_tag("/img/story-three/3-6.jpg")+
+      image_tag("/img/story-three/3-7.jpg")+
+      image_tag("/img/story-three/3-8.jpg")+
+      image_tag("/img/story-three/3-9.jpg")
     end
   end
 
