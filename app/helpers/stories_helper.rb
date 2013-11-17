@@ -77,7 +77,7 @@ module StoriesHelper
 
   def story_2_header
     content_tag(:section, :class => "story-header") do
-      content_tag(:h1, "映秀风云　我们的希望")+
+      content_tag(:h1, "映秀风云")+
           content_tag(:p, "2013-05-27 | 19:57:35", :class => "timestamp")
     end
   end
