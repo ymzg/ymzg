@@ -69,8 +69,8 @@ group :production do
 
   # Use pg as database to support heroku
   gem 'pg'
-  gem 'execjs' 
-  gem 'therubyracer'
+  #gem 'execjs'
+  #gem 'therubyracer'
 end
 
 if RUBY_VERSION =~ /1.9/ # assuming you're running Ruby ~1.9
