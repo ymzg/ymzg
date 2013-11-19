@@ -251,7 +251,7 @@ footer {
 @media (max-width: 555px) {
   footer {
     #footer-ul {
-      width: 360px !important;
+      max-width: 360px !important;
     }
   }
 }
