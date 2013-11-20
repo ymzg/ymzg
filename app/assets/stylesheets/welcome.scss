@@ -42,14 +42,14 @@ section#summary{
   }
 }
 
-section#carousel{
+#carousel{
   padding: 0;
   #slides {
     display: none;
     position: relative;
     .slidesjs-previous, .slidesjs-next {
       position: absolute;
-      top: 150px;
+      top: 200px;
       z-index: 50;
       background: rgba(255,255,255, .7);
       @include border-radius(50%);
@@ -60,6 +60,7 @@ section#carousel{
       font-size: 60px;
       font-weight: bold;
       font-family: "Comic Sans MS";
+      text-align: center;
       &:hover {
         text-decoration: none;
       }
