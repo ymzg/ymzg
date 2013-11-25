@@ -130,7 +130,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 45px;
+  height: 50px;
   z-index: 100;
   @include box-shadow-standard;
 }
@@ -141,7 +141,7 @@ nav {
     }
    a{
       font-size: 19px;
-      line-height: 44px;
+      line-height: 50px;
       text-decoration: none;
       color: #fff !important;
       &:hover {
@@ -152,7 +152,7 @@ nav {
 }
 
 .main-content{
-  margin-top: 44px;
+  margin-top: 50px;
   min-height: 100%;
   margin-bottom: -140px;
   &:after {
