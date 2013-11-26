@@ -52,26 +52,24 @@ section#summary{
       position: absolute;
       top: 200px;
       z-index: 50;
-      background: rgba(255,255,255, .7);
-      @include border-radius(50%);
-      width: 80px;
+      width: 79px;
       height: 80px;
-      line-height: 80px;
-      color: #444;
-      font-size: 60px;
-      font-weight: bold;
-      font-family: "Comic Sans MS";
-      text-align: center;
+      color: transparent;
       &:hover {
         text-decoration: none;
+      }
+      &:link {
+        content: "";
       }
 
     }
     .slidesjs-previous {
       left: 10px;
+      background-image: url("/img/thumb/narrow-left.png");
     }
     .slidesjs-next {
       right: 10px;
+      background-image: url("/img/thumb/narrow-right.png");;
     }
   }
 }
