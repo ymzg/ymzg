@@ -37,10 +37,8 @@ section#main-title{
   
 }
 
-section#summary{
-  .who-we-are {
-    line-height: 24px;
-  }
+.who-we-are {
+  background-image: url("/img/thumb/who-we-are.jpg");
 }
 
 #carousel{
@@ -58,10 +56,6 @@ section#summary{
       &:hover {
         text-decoration: none;
       }
-      &:link {
-        content: "";
-      }
-
     }
     .slidesjs-previous {
       left: 10px;
