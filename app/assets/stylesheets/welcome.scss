@@ -41,6 +41,10 @@ section#main-title{
   background-image: url("/img/thumb/who-we-are.jpg");
 }
 
+.story-texture {
+  background-image: url("/img/thumb/story-background.jpg");
+}
+
 #carousel{
   padding: 0;
   #slides {
@@ -102,7 +106,7 @@ section#featured{
   }
 }
 section#stories{
-  background-color: #eee;
+  //background-color: #eee;
   position: relative;
   padding: 0;
   width: 100%;
