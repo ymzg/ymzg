@@ -1,4 +1,4 @@
-## YMZG [![Build Status](https://snap-ci.com/jcgMKbQpWbdbVA5yR_jGyPJdd07sooe0zbY28za-Kaw/build_image)](https://snap-ci.com/projects/ymzg/ymzg/build_history)
+## YMZG [![Build Status](https://snap-ci.com/b7yqO4aw-tps_UIJqtfjuXNF4RDYu4W9W4lJGzMnboc/build_image)](https://snap-ci.com/projects/ymzg/ymzg/build_history)
 
 
 ###本地安装运行指南###
