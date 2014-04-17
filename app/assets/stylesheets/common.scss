@@ -12,8 +12,19 @@ h2{font-size: 2em; margin-bottom: .5em;}
 p{margin-bottom: 1.5em;}
 .subtitle-h3{
   font-size: 2em;
-  margin: 1em 0px;
+  margin: 0.0 0 1em 0;
 }
+.time-location {
+  display: block;
+  margin: 0px 0px 0.5em 0px;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
 ul.article-list {
     width: 80%;
     margin: 0 auto;
