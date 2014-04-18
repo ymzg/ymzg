@@ -34,13 +34,10 @@
       <h2>近期活动</h2>
 
       <%if @event!=nil%>
-          <div class="event-wrapper">
+          <div class="event-wrapper align-left">
               <div class="event">
                   <div class="clear event-title-row">
                       <h3 class="subtitle-h3 float-left"><%=@event.title%></h3>
-           <span class="float-right">
-               <%=link_to "我要参加",@event.event_url, :class=>"primary button add-new", :target => '_blank'%>
-           </span>
                   </div>
                   <div class="clear">
                       <div class="float-left">
@@ -62,9 +59,6 @@
               <div class="event">
                   <div class="clear event-title-row">
                       <h3 class="subtitle-h3 float-left">情系山区&middot;扶贫项目</h3>
-           <span class="float-right">
-               <a class="primary button add-new" href="https://www.jinshuju.net/f/sEZyPe" target="_blank">我要参加</a>
-           </span>
                   </div>
                   <div class="clear">
                       <div class="float-left">
