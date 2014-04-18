@@ -32,29 +32,58 @@
 <div class="row story-texture">
   <section id="featured" class="clear">
       <h2>近期活动</h2>
-    <div class="event-wrapper">
-      <div class="event">
-       <div class="clear event-title-row">
-           <h3 class="subtitle-h3 float-left">情系山区&middot;扶贫项目</h3>
+
+      <%if @event!=nil%>
+          <div class="event-wrapper">
+              <div class="event">
+                  <div class="clear event-title-row">
+                      <h3 class="subtitle-h3 float-left"><%=@event.title%></h3>
+           <span class="float-right">
+               <%=link_to "我要参加",@event.event_url, :class=>"primary button add-new", :target => '_blank'%>
+           </span>
+                  </div>
+                  <div class="clear">
+                      <div class="float-left">
+                          <span class="time-location">时间：<%= @event.event_date %></span>
+                          <span class="time-location">地点：<%= @event.location %></span>
+                      </div>
+                  </div>
+                  <div id="event-description">
+                      <%= @event.description %>
+                  </div>
+              </div>
+          </div>
+          <div class="map">
+              <%= image_tag @event.image.url, :class=>"event-full-image" %>
+          </div>
+
+      <%else%>
+          <div class="event-wrapper">
+              <div class="event">
+                  <div class="clear event-title-row">
+                      <h3 class="subtitle-h3 float-left">情系山区&middot;扶贫项目</h3>
            <span class="float-right">
                <a class="primary button add-new" href="https://www.jinshuju.net/f/sEZyPe" target="_blank">我要参加</a>
            </span>
-       </div>
-          <div class="clear">
-              <div class="float-left">
-                  <span class="time-location">时间：2014-04-04</span>
-                  <span class="time-location">地点：成都</span>
+                  </div>
+                  <div class="clear">
+                      <div class="float-left">
+                          <span class="time-location">时间：2014-04-04</span>
+                          <span class="time-location">地点：成都</span>
+                      </div>
+                  </div>
+                  <p>
+                      我国西部山区有很多孩子仍然在贫困和闭塞的环境中挣扎成长，他们渴望能得到志愿者给他们持续的爱与支持。团队为有志于参加贵州毕节和四川凉山山区义教的同学提供组织和培训，组建团队亲临贫困山区传播义梦精神，为当地孩子建立自己的学习团队。
+                  </p>
               </div>
           </div>
-        <p>
-            我国西部山区有很多孩子仍然在贫困和闭塞的环境中挣扎成长，他们渴望能得到志愿者给他们持续的爱与支持。团队为有志于参加贵州毕节和四川凉山山区义教的同学提供组织和培训，组建团队亲临贫困山区传播义梦精神，为当地孩子建立自己的学习团队。
-        </p>
-      </div>
-    </div>
+          <div class="map">
+              <%= image_tag "/img/home/event-location.png" %>
+          </div>
+      <%end%>
 
-    <div class="map">
-      <%= image_tag "/img/home/event-location.png" %>
-    </div>
+
+
   </section>
   <h2 class="row-header">团队的成长</h2>
   <section id="stories">
