@@ -38,6 +38,9 @@
               <div class="event">
                   <div class="clear event-title-row">
                       <h3 class="subtitle-h3 float-left"><%=@event.title%></h3>
+                      <span>
+                        <%=link_to "我要参加",@event.event_url, :class=>"primary button add-new", :id=>"event-register-button",:target => '_blank'%>
+                     </span>
                   </div>
                   <div class="clear">
                       <div class="float-left">
