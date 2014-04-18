@@ -1,7 +1,7 @@
 class WelcomeController < ActionController::Base
   layout 'application'
   def index
-     @event = Event.all.first
+     @events = Event.all.first(2)
   end
 
   def admin
